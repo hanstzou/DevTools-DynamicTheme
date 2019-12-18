@@ -1,0 +1,3 @@
+[submodule "src"]
+	path = darkreader
+	url = git@github.com:darkreader/darkreader.git
