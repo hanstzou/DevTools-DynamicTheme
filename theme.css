@@ -15,6 +15,31 @@ CSS
 
 ================================
 
+*.github.*.com
+
+INVERT
+canvas
+img.avatar[src*="/avatars/u/982"]
+
+CSS
+.timeline-comment-wrapper {
+  border: none;
+}
+body {
+  background: transparent !important;
+}
+.discussion-timeline::before {
+  background: ${rgba(210, 212, 215, 0.9)};
+  width: 2px;
+}
+.new-discussion-timeline .closed-banner {
+    background: ${#e4e4e4};
+    border-top: 4px solid ${rgba(210, 212, 215, 0.9)};
+    border-bottom: none;
+}
+
+================================
+
 4pda.ru
 
 CSS
@@ -2003,6 +2028,32 @@ whois.com
 INVERT
 img[src="/images/logo.gif"]
 img[src="//cdnassets.com/ui/resellerdata/120000_149999/129394/supersite2/supersite/themes/EliteGreen-ResponsiveTheme/images/logo.gif"]
+
+================================
+
+wiki.jarvis.*.com
+
+INVERT
+div.gliffy-stage canvas
+div.gliffy-container div.diagram-image-container img
+span.status-macro
+a.confluence-embedded-file img
+div.avatar img.avatar-img[src^="/download/attachments/77234842/AEGIS"]
+span.aui-icon-wait
+
+CSS
+div.ia-fixed-sidebar img.avatar-img {
+    background-color: transparent !important;
+}
+#header .aui-header {
+  background: rgba(0, 0, 0, 0.65) !important;
+}
+div.ia-fixed-sidebar:before {
+  background-color: ${#eee} !important;
+}
+body {
+  background-color: inherit;
+}
 
 ================================
 
