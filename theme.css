@@ -37,6 +37,45 @@ body {
     border-top: 4px solid ${rgba(210, 212, 215, 0.9)};
     border-bottom: none;
 }
+/* Copy of github.com */
+.markdown-body code,
+.markdown-body pre {
+    background-color: ${rgba(27, 31, 35, 0.1)} !important;
+}
+.markdown-body pre code {
+    background-color: transparent !important;
+}
+.refined-github .dashboard .js-all-activity-header + div {
+    background-color: ${#e4e5e9} !important;
+    border-color: ${#bbc1c9} !important;
+}
+.refined-github .dashboard-rollup-items .body {
+    border-top-color: ${#bbc1c9} !important;
+}
+.js-site-search-form {
+    background-color: #ffffff1a !important;
+    border-radius: 2pt !important;
+}
+.day[fill="#ebedf0"], .legend li[style*="background-color: rgb(235, 237, 240)"] {
+    fill: ${#ebedf0} !important;
+    background-color: ${#ebedf0} !important;
+}
+.day[fill="#c6e48b"], .legend li[style*="background-color: rgb(198, 228, 139)"] {
+    fill: ${#c6d4cb} !important;
+    background-color: ${#c6d4cb} !important;
+}
+.day[fill="#7bc96f"], .legend li[style*="background-color: rgb(123, 201, 111)"] {
+    fill: ${#7bb97f} !important;
+    background-color: ${#7bb97f} !important;
+}
+.day[fill="#239a3b"], .legend li[style*="background-color: rgb(35, 154, 59)"] {
+    fill: ${#238a3b} !important;
+    background-color: ${#238a3b} !important;
+}
+.day[fill="#196127"], .legend li[style*="background-color: rgb(25, 97, 39)"] {
+    fill: ${#196127} !important;
+    background-color: ${#196127} !important;
+}
 
 ================================
 
