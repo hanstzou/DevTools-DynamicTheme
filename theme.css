@@ -15,6 +15,39 @@ CSS
 
 ================================
 
+*.cppreference.com
+
+INVERT
+#searchButton img
+.t-image
+img[alt$=".svg"]
+a[href$=".svg"] img
+
+CSS
+div#simpleSearch,
+div#cpp-head-second-base {
+    background-image: none;
+}
+div.vectorTabs,
+div.vectorTabs span,
+div.vectorTabs ul li {
+    background-image: none !important;
+}
+div.vectorTabs ul li.selected {
+    background-color: ${white} !important;
+}
+div.vectorTabs ul li {
+    background-color: ${#eef3ff} !important;
+}
+div#cpp-head-second-base {
+    background-color: ${#eaeaea} !important;
+}
+#footer-icons img {
+    filter: grayscale(100%) invert(85%);
+}
+
+================================
+
 *.github.*.com
 
 INVERT
@@ -1935,6 +1968,19 @@ CSS
 }
 [class^=ndgTag] {
     border-top-color: transparent !important;
+}
+
+================================
+
+udn.com
+
+INVERT
+img[src="/static/img/logo_name.svg"]
+
+CSS
+div#menu,
+div.menu {
+  background-color: ${#9fc9fc};
 }
 
 ================================
