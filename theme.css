@@ -48,6 +48,13 @@ div#cpp-head-second-base {
 
 ================================
 
+*.fileformat.info
+
+INVERT
+.thumbnail img
+
+================================
+
 *.github.*.com
 
 INVERT
@@ -69,6 +76,9 @@ body {
     background: ${#e4e4e4};
     border-top: 4px solid ${rgba(210, 212, 215, 0.9)};
     border-bottom: none;
+}
+.diffbar-range-menu .in-range:not(.is-range-selected) {
+    background-color: ${#8be};
 }
 /* Copy of github.com */
 .markdown-body code,
@@ -108,6 +118,24 @@ body {
 .day[fill="#196127"], .legend li[style*="background-color: rgb(25, 97, 39)"] {
     fill: ${#196127} !important;
     background-color: ${#196127} !important;
+}
+
+================================
+
+*.myworkday.com
+
+INVERT
+div.wdappchrome-k
+.pdfpreviewer-b
+
+CSS
+.wdappchrome-i {
+  filter:
+    hue-rotate(14deg) saturate(800%)
+    contrast(200%) brightness(72%);
+}
+.WLOP {
+  background-image: none !important;
 }
 
 ================================
@@ -336,6 +364,21 @@ INVERT
 .-iconset-navarrow_right
 .sort_more_options__button
 .mb-ico
+
+================================
+
+bugs.python.org
+
+INVERT
+#logo
+
+CSS
+#logoheader {
+    background-image: none;
+}
+#logolink {
+  filter: contrast(80%) saturate(160%) brightness(135%);
+}
 
 ================================
 
@@ -734,6 +777,24 @@ article > * > * > * > * > iframe
 
 ================================
 
+git-scm.com
+
+INVERT
+.inner header a img
+#front-downloads .monitor
+#front-downloads .monitor *
+
+CSS
+body {
+  background-image: none;
+  background-color: ${#eee};
+}
+#main {
+  background-color: ${#e0e0e0};
+}
+
+================================
+
 github.blog
 
 INVERT
@@ -966,6 +1027,27 @@ jisho.org
 
 INVERT
 h1.logo
+
+================================
+
+jr.*.com
+
+CSS
+.aui-dropdown2.aui-style-default {
+  box-shadow:
+    ${rgba(26, 41, 66, .15)} 0px 4px 8px,
+    ${rgba(26, 41, 66, .5)} 0px 0px 1px;
+}
+.aui-sidebar-toggle .aui-icon {
+  background: url(/s/exmm2t/713005/1438bdd62407b42910a3beea5c739249/7.9.9/_/download/resources/com.atlassian.auiplugin:aui-sidebar/images/icons/sidebar/icon-toggle.svg) !important;
+  background-size: 150% !important;  
+  background-position-x: 55% !important;
+  background-position-y: 50% !important;
+  filter: grayscale(100%) brightness(200%);
+}
+.ghx-detail-contents {
+  background-image: none;
+}
 
 ================================
 
@@ -1682,6 +1764,13 @@ CSS
 .r {
     border-style: none !important;
 }
+
+================================
+
+speakerdeck.com
+
+INVERT
+div.sd-player-slide
 
 ================================
 
