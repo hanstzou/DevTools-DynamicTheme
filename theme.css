@@ -58,8 +58,8 @@ INVERT
 *.github.*.com
 
 INVERT
-canvas
 img.avatar[src*="/avatars/u/982"]
+img.gravatar[src*="/avatars/u/982"]
 
 CSS
 .timeline-comment-wrapper {
@@ -118,6 +118,18 @@ body {
 .day[fill="#196127"], .legend li[style*="background-color: rgb(25, 97, 39)"] {
     fill: ${#196127} !important;
     background-color: ${#196127} !important;
+}
+#network canvas,
+img.network-tree {
+  filter: invert(85%);
+}
+img[src$="spinner-32.gif"],
+img[src$="spinner-32-grey.gif"],
+img[src$="spinner-64.gif"],
+img[src$="spinner-64-grey.gif"],
+img[src$="spinner-128.gif"],
+img[src$="spinner-128-grey.gif"] {
+  filter: invert(75%);
 }
 
 ================================
@@ -847,6 +859,18 @@ CSS
     fill: ${#196127} !important;
     background-color: ${#196127} !important;
 }
+#network canvas,
+img.network-tree {
+  filter: invert(85%);
+}
+img[src$="spinner-32.gif"],
+img[src$="spinner-32-grey.gif"],
+img[src$="spinner-64.gif"],
+img[src$="spinner-64-grey.gif"],
+img[src$="spinner-128.gif"],
+img[src$="spinner-128-grey.gif"] {
+  filter: invert(75%);
+}
 
 ================================
 
@@ -1204,6 +1228,15 @@ INVERT
 CSS
 a {
   text-decoration-line: underline !important;
+}
+blockquote {
+  box-shadow: inset 3px 0 0 0 ${rgb(100, 100, 100)} !important;
+}
+div[role=tooltip] svg {
+  fill: ${#333}
+}
+div[role=tooltip] svg:hover {
+  fill: ${black}
 }
 
 ================================
