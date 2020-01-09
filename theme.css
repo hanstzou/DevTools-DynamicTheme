@@ -1091,7 +1091,7 @@ CSS
   filter: grayscale(100%) brightness(200%);
 }
 .ghx-detail-contents {
-  background-image: none;
+  background-image: none !important;
 }
 
 ================================
