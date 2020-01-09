@@ -1,6 +1,27 @@
 *
 
+INVERT
+img.editor-inline-macro:not(.with-chrome)
+table.wysiwyg-macro::after
+
 CSS
+img.editor-inline-macro:not(.with-chrome) {
+    border: 2px solid ${#333};
+}
+table.wysiwyg-macro {
+    position: relative;
+    background-position: 0 -64px;
+}
+table.wysiwyg-macro::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 2px);
+    height: 24px;
+    background-image: inherit;
+}
 .jfk-bubble {
     background-color: ${white} !important;
 }
@@ -2245,7 +2266,8 @@ div.gliffy-stage canvas
 div.gliffy-container div.diagram-image-container img
 span.status-macro
 a.confluence-embedded-file img
-div.avatar img.avatar-img[src^="/download/attachments/77234842/AEGIS"]
+div.avatar img.avatar-img[src^="/download/attachments/77234842/"]
+img.space-logo[src^="/download/attachments/77234842/"]
 span.aui-icon-wait
 
 CSS
@@ -2260,6 +2282,9 @@ div.ia-fixed-sidebar:before {
 }
 body {
   background-color: inherit;
+}
+a.aui-button,.aui-button,.aui-button:visited {
+  background-color: ${rgba(9,30,66,0.08)};
 }
 
 ================================
