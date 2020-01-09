@@ -144,6 +144,7 @@ body {
 img.network-tree {
   filter: invert(85%);
 }
+include-fragment.octocat-spinner,
 img[src$="spinner-32.gif"],
 img[src$="spinner-32-grey.gif"],
 img[src$="spinner-64.gif"],
@@ -971,6 +972,7 @@ CSS
 img.network-tree {
   filter: invert(85%);
 }
+include-fragment.octocat-spinner,
 img[src$="spinner-32.gif"],
 img[src$="spinner-32-grey.gif"],
 img[src$="spinner-64.gif"],
