@@ -155,6 +155,18 @@ img[src$="spinner-128-grey.gif"] {
 
 ================================
 
+*.jenkinsci.*.com
+
+CSS
+.progress-bar-done {
+  background-color: ${#3465a4} !important;
+}
+#right-top-nav, #breadcrumbs li, img {
+  background-color: transparent !important;
+}
+
+================================
+
 *.myworkday.com
 
 INVERT
@@ -968,6 +980,19 @@ hackerrank.com
 INVERT
 .badge-title
 .badge-star
+
+================================
+
+hacks.mozilla.org
+
+CSS
+main article img {
+  filter:
+    invert(95%)
+    hue-rotate(180deg)
+    brightness(110%)
+    contrast(80%)
+}
 
 ================================
 
