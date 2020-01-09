@@ -185,6 +185,81 @@ CSS
 
 ================================
 
+*.pchome.com.tw
+
+INVERT
+.style_24h .block_N::after
+
+CSS
+.treeview .end::before, .treeview .end .sub {
+  background: ${#e6e6e6};
+}
+.ecsite-search .layout-center,
+.hp_w #ActivityContainer dd.head ,
+.hp_w .award dd.head {
+  background: none;
+}
+.hp_w .block_H,
+.hp_w .block_H .sp,
+#MenuContainer dt,
+#RegionName,
+.site_nav::before,
+.Ht .site_nav::before,
+.offer_box .site_slide {
+  background-image: none;
+}
+div.metro,
+.layout-center a.cart {
+  filter: brightness(80%) contrast(120%)
+}
+.ecsite-prod .layout-center ul.payment li.ico,
+.ecsite-prod .layout-center .right #h24Block .cobrander_img,
+.ecsite-prod .layout-center .right #h24Block .h24 {
+  filter: invert(90%) hue-rotate(180deg)
+}
+.hp_w img:not(:hover),
+.site_evt img:not(:hover),
+.ecsite-sign .layout-center img:not(:hover),
+.ecsite-search .layout-center img:not(:hover),
+.ecsite-store .layout-center img:not(:hover),
+.ecsite-region .layout-center img:not(:hover),
+.ecsite-prod .layout-center img:not(:hover),
+dd.head:not(:hover),
+.add24hCart button {
+  filter: saturate(150%) contrast(90%) brightness(75%)
+}
+dd.head img {
+  filter: unset !important;
+}
+.ecsite-prod .layout-center #IntroContainer img:hover {
+  transition: filter 0.5s 1.5s;
+}
+#HEADER a.member {
+  filter: invert(80%) hue-rotate(210deg) brightness(120%) contrast(140%);
+}
+.ecsite-sign #HEADER #SignContainer,
+.ecsite-store #HEADER #SignContainer,
+.ecsite-region #HEADER #SignContainer,
+.ecsite-prod #HEADER #SignContainer {
+  filter: saturate(70%)
+}
+#HEADER a.cart,
+.ecsite-sign #HEADER a.sign,
+.ecsite-store #HEADER a.sign,
+.ecsite-region #HEADER a.sign,
+.ecsite-prod #HEADER a.sign {
+  filter: invert(95%) hue-rotate(185deg) brightness(120%) contrast(150%);
+}
+#HEADER .site_tooth .actived {
+  filter: brightness(200%)
+}
+#HEADER .site_tooth span {
+  background: none;
+  -webkit-animation: unset;
+}
+
+================================
+
 4pda.ru
 
 CSS
