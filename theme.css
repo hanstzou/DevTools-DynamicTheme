@@ -5,6 +5,9 @@ img.editor-inline-macro:not(.with-chrome)
 table.wysiwyg-macro::after
 
 CSS
+body {
+  background-color: transparent !important
+}
 img.editor-inline-macro:not(.with-chrome) {
     border: 2px solid ${#333};
 }
@@ -1185,6 +1188,9 @@ h1.logo
 jr.*.com
 
 CSS
+.aui-dialog-content svg text[fill^="#f"]:not([style*="cursor: move"]) {
+  fill: ${white} !important
+}
 .aui-dropdown2.aui-style-default {
   box-shadow:
     ${rgba(26, 41, 66, .15)} 0px 4px 8px,
@@ -1805,6 +1811,30 @@ INVERT
 
 ================================
 
+segjira.*.com
+
+CSS
+.aui-dialog-content svg text[fill^="#f"]:not([style*="cursor: move"]) {
+  fill: ${white} !important
+}
+.aui-dropdown2.aui-style-default {
+  box-shadow:
+    ${rgba(26, 41, 66, .15)} 0px 4px 8px,
+    ${rgba(26, 41, 66, .5)} 0px 0px 1px;
+}
+.aui-sidebar-toggle .aui-icon {
+  background: url(/s/exmm2t/713005/1438bdd62407b42910a3beea5c739249/7.9.9/_/download/resources/com.atlassian.auiplugin:aui-sidebar/images/icons/sidebar/icon-toggle.svg) !important;
+  background-size: 150% !important;  
+  background-position-x: 55% !important;
+  background-position-y: 50% !important;
+  filter: grayscale(100%) brightness(200%);
+}
+.ghx-detail-contents {
+  background-image: none !important;
+}
+
+================================
+
 semmle.com
 
 CSS
@@ -2389,8 +2419,18 @@ img.space-logo[src^="/download/attachments/77234842/"]
 .aui-icon-wait
 
 CSS
+div#full-height-container,
+div#footer-logo,
 div.ia-fixed-sidebar img.avatar-img {
-    background-color: transparent !important;
+  background-color: transparent !important;
+}
+#footer .footer-body {
+  background: none !important;
+}
+div#footer-logo a {
+  background-size: 127px 16px !important;
+  filter: invert(75%) hue-rotate(175deg) brightness(110%)
+          contrast(70%);
 }
 #header .aui-header {
   background: rgba(0, 0, 0, 0.65) !important;
