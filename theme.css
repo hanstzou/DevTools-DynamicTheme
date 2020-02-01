@@ -2892,6 +2892,31 @@ CSS
 
 ================================
 
+www.kobo.com
+
+INVERT
+div.ajax-spinner::after
+
+CSS
+div.ajax-spinner {
+    position: relative;
+    background-position: 0 -64px;
+}
+div.ajax-spinner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+================================
+
 www.tinkercad.com/things
 
 CSS
