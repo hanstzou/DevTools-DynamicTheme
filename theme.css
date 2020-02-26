@@ -84,6 +84,16 @@ INVERT
 INVERT
 img.avatar[src*="/avatars/u/982"]
 img.gravatar[src*="/avatars/u/982"]
+img.rounded-1[src*="/avatars/u/982"]
+img.avatar[src*="/avatars/u/2961"]
+img.gravatar[src*="/avatars/u/2961"]
+img.rounded-1[src*="/avatars/u/2961"]
+img.avatar[src*="/avatars/t/709"]
+img.gravatar[src*="/avatars/t/709"]
+img.rounded-1[src*="/avatars/t/709"]
+img.avatar[src*="/avatars/t/732"]
+img.gravatar[src*="/avatars/t/732"]
+img.rounded-1[src*="/avatars/t/732"]
 
 CSS
 .timeline-comment-wrapper {
@@ -1397,6 +1407,7 @@ CSS
 .aui-dialog-content svg text[fill^="#f"]:not([style*="cursor: move"]) {
   fill: ${white} !important
 }
+.ajs-layer.box-shadow,
 .aui-dropdown2.aui-style-default {
   box-shadow:
     ${rgba(26, 41, 66, .15)} 0px 4px 8px,
@@ -1575,9 +1586,11 @@ a {
 blockquote {
   box-shadow: inset 3px 0 0 0 ${rgb(100, 100, 100)} !important;
 }
+svg:not([class]):only-child,
 div[role=tooltip] svg {
   fill: ${#333}
 }
+svg:not([class]):only-child:hover,
 div[role=tooltip] svg:hover {
   fill: ${black}
 }
@@ -1932,6 +1945,18 @@ CSS
 
 ._1ump7uMrSA43cqok14tPrG::before {
   background: transparent !important;
+}
+
+================================
+
+regex101.com
+
+CSS
+div > div:first-child + canvas:last-child {
+ filter: invert(100%) hue-rotate(175deg) brightness(180%) contrast(85%);
+}
+.light .OJcb7 {
+    background-color: ${rgb(64, 218, 212)} !important;
 }
 
 ================================
@@ -2740,6 +2765,8 @@ span.status-macro
 a.confluence-embedded-file img
 div.avatar img.avatar-img[src^="/download/attachments/77234842/"]
 img.space-logo[src^="/download/attachments/77234842/"]
+span.aui-avatar img[src^="/download/attachments/77234842/"]
+img[alt=avatar][src^="/download/attachments/77234842/"]
 .aui-icon-wait
 
 CSS
