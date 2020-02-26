@@ -2786,6 +2786,13 @@ div#footer-logo a {
 #header .aui-header {
   background: rgba(0, 0, 0, 0.65) !important;
 }
+.ajs-layer.box-shadow,
+.aui-dropdown2.aui-style-default,
+.aui-flag .aui-message {
+  box-shadow:
+    ${rgba(26, 41, 66, .15)} 0px 4px 8px,
+    ${rgba(26, 41, 66, .5)} 0px 0px 1px;
+}
 div.ia-fixed-sidebar:before {
   background-color: ${#eee} !important;
 }
