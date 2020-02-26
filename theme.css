@@ -2798,7 +2798,7 @@ a.aui-button,.aui-button,.aui-button:visited {
 div.cp-image-preview img:not([alt$=jpg]),
 img.confluence-embedded-image:not([data-linked-resource-content-type="image/jpeg"]) {
   background-color: transparent !important;
-  filter: invert(100%) hue-rotate(180deg) brightness(150%) contrast(72%) grayscale(15%);
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) grayscale(20%);
 }
 img.confluence-embedded-image[data-linked-resource-content-type="image/jpeg"]:not(:hover) {
   filter: saturate(150%) contrast(90%) brightness(75%) grayscale(30%);
