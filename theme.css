@@ -2951,6 +2951,18 @@ div.ajax-spinner::after {
 
 ================================
 
+www.thsrc.com.tw
+
+INVERT
+.revision02_open
+
+CSS
+.revision01_logo {
+  filter: brightness(50%) contrast(200%) brightness(110%) contrast(77%) saturate(210%) brightness(140%);
+}
+
+================================
+
 www.tinkercad.com/things
 
 CSS
