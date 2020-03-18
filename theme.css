@@ -818,6 +818,36 @@ img[alt="GitHub Education"]
 
 ================================
 
+ehb.tw.*.org
+
+INVERT
+.t3_online_help .menu li img
+
+CSS
+.t3_online_help #top_div.header {
+  background: ${white} !important;
+  border-bottom-color: ${#e11};
+}
+
+.t3_online_help #top_div.header h2.product_tis:before {
+  filter:
+    invert(95%)
+    hue-rotate(183deg)
+    saturate(640%)
+    contrast(95%)
+    brightness(115%);
+}
+
+.t3_online_help #top_div.header h2.product_tis .tm_logo::after {
+    color: ${white};
+}
+
+.t3_online_help #converttype {
+    background-color: ${#c2d0da} !important;
+}
+
+================================
+
 elearning.utdallas.edu
 
 INVERT
