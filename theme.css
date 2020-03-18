@@ -247,9 +247,12 @@ CSS
 .hp_w .block_H .sp,
 #MenuContainer dt,
 #RegionName,
-.site_nav::before,
+.site_nav:before,
 .Ht .site_nav::before,
-.offer_box .site_slide {
+.offer_box .site_slide,
+.pagination ul,
+.pagination ul:before,
+.pagination ul:after {
   background-image: none;
 }
 div.metro,
