@@ -182,6 +182,7 @@ body {
     background-color: rgb(28, 30, 31) !important;
     color: darkgrey !important;
 }
+div.octocat-spinner,
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
 img[src$="spinner-32.gif"],
@@ -215,6 +216,7 @@ CSS
 INVERT
 div.wdappchrome-k
 .pdfpreviewer-b
+div[role=complementary] img.gwt-Image
 
 CSS
 .wdappchrome-i {
@@ -246,12 +248,9 @@ CSS
 .hp_w .block_H .sp,
 #MenuContainer dt,
 #RegionName,
-.site_nav:before,
+.site_nav::before,
 .Ht .site_nav::before,
-.offer_box .site_slide,
-.pagination ul,
-.pagination ul:before,
-.pagination ul:after {
+.offer_box .site_slide {
   background-image: none;
 }
 div.metro,
@@ -3218,6 +3217,36 @@ INVERT
 #shareButton::after
 .listbox-option::after
 #shareCopyLink::after
+
+================================
+
+tw-ets-vra.tw.*.org
+
+INVERT
+table[id^=PROGRESS_INDICATOR]
+div.x-mask-msg-inner
+div.datagrid-placeholder-image
+div.select
+span.select
+
+CSS
+span.treenode-text {
+  color: ${#333};
+}
+.spinner {
+  background-size: contain !important;
+}
+table.dxtlDataTable thead tr th {
+  background-image: none;
+}
+div.resource-name-icon,
+div.resource-list clr-icon,
+div.clr-treenode-content div.icon,
+div.deployment-title div.icon,
+div.card-media-image {
+  filter: invert(75%) hue-rotate(175deg)
+    brightness(85%) contrast(140%) saturate(200%);
+}
 
 ================================
 
