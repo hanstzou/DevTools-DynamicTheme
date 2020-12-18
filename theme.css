@@ -4,7 +4,6 @@ INVERT
 img.editor-inline-macro:not(.with-chrome)
 table.wysiwyg-macro::after
 .jfk-bubble
-embed[type="application/pdf"]
 
 CSS
 body {
@@ -189,12 +188,6 @@ body {
 }
 .jfk-bubble, .octotree-sidebar, .cc-pr__logo, .cc-octicon, #network canvas, img.network-tree {
     filter: invert(94.4%) hue-rotate(180deg) contrast(90%) !important;
-}
-.progress-bar {
-    background-color: rgba(196, 191, 183, 0.25) !important;
-}
-.progress{
-    background-color: green !important; 
 }
 div.octocat-spinner,
 img.js-loading-spinner,
@@ -438,6 +431,17 @@ INVERT
 
 ================================
 
+akademy.kde.org
+dot.kde.org
+forum.kde.org
+
+CSS
+body {
+    background: ${rgb(225, 227, 228)} !important;
+}
+
+================================
+
 akinator.com
 
 INVERT
@@ -592,6 +596,28 @@ CSS
 #fixed-server-timer {
     color: #333;
 }
+
+================================
+
+atlassian.net
+
+CSS
+#jira-issue-header {
+    background-color: transparent !important;
+}
+
+================================
+
+avito.ru
+
+INVERT
+.logo-logo-3ugdk
+.logo-logo-2YITg
+.item-extended-phone
+.item-price-old::before
+.contacts-phone-3KtSI
+.button-content-phone_size_l-1O5VB
+._39EVKDP-9p1BREJQ3fhILl._2sPEvPi-1aWpcq1ggVph1C._4wLX_6jxKYoWRyE1U1WcZ
 
 ================================
 
@@ -782,6 +808,43 @@ img[src$="dark_create_class_arrow.svg"]
 
 ================================
 
+cloud.databricks.com
+*.azuredatabricks.net
+
+INVERT
+.figure
+
+CSS
+text {
+  fill: white;
+}
+
+.cm-string {
+  color: rgb(132, 179, 235) !important;
+}
+
+.cm-keyword {
+  color: rgb(232, 121, 172) !important;
+}
+
+.cm-variable-2 {
+  color: rgb(97, 215, 255) !important;
+}
+
+li.CodeMirror-hint {
+ font-family: Source Code Pro, Menlo, monospace;
+}
+
+span[role="presentation"] {
+  color: white !important;
+}
+
+.CodeMirror-cursor {
+  border-left-color: white !important;
+}
+
+================================
+
 code.qt.io
 
 INVERT
@@ -951,6 +1014,13 @@ INVERT
 
 ================================
 
+deepl.com
+
+INVERT
+.dl_ad_pro__features_item::before
+
+================================
+
 dev.to
 
 INVERT
@@ -970,6 +1040,15 @@ developer.mozilla.org
 INVERT
 .logo
 mark
+
+================================
+
+dict.cc
+
+CSS
+#langbar {
+    background-image: none !important;
+}
 
 ================================
 
@@ -1017,6 +1096,7 @@ INVERT
 .vs-icon
 .vpc-icon
 .docs-analytics-img
+.apps-share-sprite
 
 CSS
 .docs-preview-palette-item {
@@ -1041,15 +1121,8 @@ CSS
 .docs-gm .docs-revisions-switch.apps-ui-material-slide-toggle-container-checked .apps-ui-material-slide-toggle-thumb {
     background-color: rgb(9, 64, 155) !important;
 }
-
-================================
-
-dot.kde.org
-forum.kde.org
-
-CSS
-body {
-    background: rgb(27,29,30);
+.docs-linkbubble-bubble {
+    filter: none !important;
 }
 
 ================================
@@ -1081,6 +1154,14 @@ dtf.ru
 
 INVERT
 mark
+
+================================
+
+duckduckgo.com
+
+IGNORE INLINE STYLE
+#color_picker_container .sample
+.zci--color_codes .circle
 
 ================================
 
@@ -1219,7 +1300,6 @@ INVERT
 ._2gb3
 ._7sjb
 .sx_b9f33b
-._3w97
 .sx_2e7846
 .sx_6d18f4
 .monochrome
@@ -1239,8 +1319,6 @@ INVERT
 #homepage_panel_promote_footer_pagelet button .img._3-8_
 #event_tabs #reaction_units span img
 .fbPlaceFlyoutWrap img
-img[src*="map"]
-[style*="map"]
 
 CSS
 .fbNubButton {
@@ -1318,8 +1396,13 @@ div[role=article] div.k4urcfbm[aria-hidden="true"] {
     background-blend-mode: color;
     --darkreader-inline-bgcolor: none !important;
 }
-.ha302278 {
-    background-color: var(--fds-white-alpha-40) !important;
+div[data-pagelet="Stories"] .ha302278 {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+div[aria-label="Change volume"] .ha302278,
+div[aria-label="Change Position"] .ha302278,
+._3paq {
+    background-color: rgba(255, 255, 255, 0.4) !important;
 }
 .r4vyqqch {
     background-color: var(--fds-white-alpha-50) !important;
@@ -1330,13 +1413,10 @@ div[role=article] div.k4urcfbm[aria-hidden="true"] {
 .sp_mWYnHXJ55SW {
     background-image: url(/rsrc.php/v3/y9/r/yO1o43KF209.png) !important;
 }
-.q2y6ezfg {
-    background-color: rgb(128,128,128) !important;
-}
 .tdjehn4e, .oo1teu6h {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
-.tdjehn4e:hover, .ovq5dppa: hover {
+.tdjehn4e:hover, .ovq5dppa:hover {
     background-color: rgba(255, 255, 255, 0.2) !important;
 }
 .k19f6yf2 {
@@ -1352,20 +1432,44 @@ div[role=article] div.k4urcfbm[aria-hidden="true"] {
     fill: none !important;
 }
 .s1i5eluu {
-    background-color: var(--primary-button-background);
+    background-color: var(--primary-button-background) !important;
 }
 .q66pz984 {
     color: var(--accent);
 }
-.esnais5j, ._8bb_ img, ._8bb_ i {
-    filter: none;
+.esnais5j, ._8bb_ img, ._8bb_ i,
+._8bb_ video, ._8bb_ ._w80, ._8bb_ ._7umt ._47yj {
+    filter: none !important;
+}
+div[role="button"] > i.hu5pjgll:not(.sp_Jc8OKpJq5NW, .sp_T89CCTT7d9Z),
+a[role="link"] > i.hu5pjgll, ._3w97 {
+    filter: var(--filter-secondary-icon) !important;
+}
+._2yua, ._3pas {
+    background-color: #888 !important;
+}
+._2yu8 {
+    background-color: rgba(255, 255, 255, .5) !important;
+}
+._8bb_ ._1c7f, img[src*="map"], [style*="map"] {
+    filter: invert(100%) hue-rotate(180deg) !important;
 }
 .sp_Jc8OKpJq5NW {
     background-image: url(/rsrc.php/v3/yV/r/RO526ka7f9m.png) !important;
 }
-.sp_C8jQ3Z1xUrS {
-    background-image: url(/rsrc.php/v3/yC/r/XFTwSywolOp.png) !important;
+.q2y6ezfg, .mkbloq8g {
+    background-color: var(--always-white) !important;
 }
+.sp_RsNP6McgtTN {
+    background-image: url(/rsrc.php/v3/yw/r/Jdn2b1imz7B.png) !important;
+}
+._3w97 {
+    background-image: url(/rsrc.php/v3/ya/r/4ck_WlGmssY.png) !important;
+}
+
+IGNORE INLINE STYLE
+[role="button"] svg
+[role="button"] svg line
 
 ================================
 
@@ -1481,6 +1585,7 @@ INVERT
 ================================
 
 gazeta.pl
+plotek.pl
 
 INVERT
 .column
@@ -1492,6 +1597,40 @@ CSS
 
 ================================
 
+gazetawroclawska.pl
+dziennikzachodni.pl
+pomorska.pl
+
+INVERT
+.atomsNavigationFooterLegal
+.componentsSiteHeader
+.atomsNavigationFooterAccordion
+.atomsNavigationFooterSocialmedia__link
+.atomsNavigationFooterSocialmedia__button
+.atomsArticlePollVoting__pulseDescription
+.atomsArticlePollVoting__form
+.atomsArticlePollVoting__voteTitle
+.componentsArticleGallery__captionDescription
+.componentsPromotionsVideo__title
+.layoutsGrid
+article .atomsArticleTile__tileImg
+.layoutsGrid--last .atomsArticleTile__tileImg
+.componentsArticleGallery__img
+.componentsArticleGallery__thumbnail
+.atomsArticleFootTools__button
+.componentsPromotionsOffers__fakeImg
+.atomsNavigationFooterLinks__logoImg
+.ytp-cued-thumbnail-overlay
+.componentsRecommendationsSelected__photo
+.componentsPromotionsSubjectCategoryPromoted__image
+p.nieprzeczytane
+p.przeczytane
+article iframe
+.atomsPromotionsQuiz__imageWrapper
+.atomsPromotionsLink__imageWrapper
+
+================================
+
 geizhals.at
 geizhals.de
 
@@ -1499,6 +1638,20 @@ CSS
 img.listview__image, img.galleryview__image {
     mix-blend-mode: normal !important;
 }
+
+================================
+
+geogebra.org
+
+INVERT
+.icon-m
+.elemText canvas
+.gwt-Image
+.gwt-StackPanelItem img
+.GeoGebraMenuImage.menuImg
+.menuImg
+.buttonContent.stylebarButton
+.EuclidianPanel > canvas
 
 ================================
 
@@ -1625,12 +1778,6 @@ CSS
 .jfk-bubble, .octotree-sidebar, .cc-pr__logo, .cc-octicon, #network canvas, img.network-tree {
     filter: invert(94.4%) hue-rotate(180deg) contrast(90%) !important;
 }
-.progress-bar {
-    background-color: rgba(196, 191, 183, 0.25) !important;
-}
-.progress{
-    background-color: green !important; 
-}
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
 img[src$="spinner-32.gif"],
@@ -1673,6 +1820,7 @@ google.*.*/maps
 
 INVERT
 #app-container.vasquette:not(.app-imagery-mode):not(.app-globe-mode) .widget-scene-canvas
+#app-container.vasquette:not(.app-imagery-mode):not(.app-globe-mode) .canvas-container > canvas
 .widget-settings-button-icon
 .searchbox-hamburger::before
 .searchbox-searchbutton::before
@@ -1823,6 +1971,19 @@ hootsuite.com
 
 INVERT
 img[src$="hootsuite_white_form3.png"]
+
+================================
+
+ikea.*
+
+CSS
+.range-revamp-ratings-bar__star--empty path,
+.range-revamp-ratings-bar__star--half path:first-child  {
+    fill: ${rgb(246, 245, 244)} !important; 
+}
+
+IGNORE INLINE STYLE
+.gpr__color-dot
 
 ================================
 
@@ -2168,6 +2329,16 @@ li-icon[type="linkedin-logo"],
 .bug-text-color {
     fill: ${black} !important;
 }
+.vjs-load-progress {
+    background-color: hsla(0,0%,100%,.3) !important;
+}
+.vjs-play-progress, .vjs-play-progress::before,
+.vjs-volume-level::before, .vjs-volume-level {
+    background-color: #fff !important;
+}
+.vjs-volume-bar {
+    background-color: hsla(0,0%,100%,.4) !important;
+}
 
 ================================
 
@@ -2196,10 +2367,17 @@ img.Ha
 .asor_t0
 .asor_i4
 .ita-icon-0
+.d-Na-Jo.d-Na-N-ax3
+.RK-QJ-Jk
+.RK-Mo.RK-Qq-LF
+#ita-st-id-cs
+.d-Na-N-M7-JX.d-Na-J3
 .gb_df
 img[src$="google_gsuite"]
 .rY>.sa
 .buh
+.qj.qr::before
+.qj.qr::after
 
 CSS
 @media (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 1.5) {
@@ -2294,6 +2472,18 @@ INVERT
 
 ================================
 
+matsci.org
+
+INVERT
+.d-header #site-logo
+
+CSS
+.category-logo.aspect-image img {
+  background-color: white !important;
+}
+
+================================
+
 medium.com
 
 INVERT
@@ -2361,6 +2551,7 @@ messenger.com
 INVERT
 ._4rv6
 a._4ce_
+.j7vl6m33
 
 CSS
 ._8rsr {
@@ -2378,19 +2569,29 @@ CSS
 
 ================================
 
-metacritic.com
-
-INVERT
-img[src="/images/icons/dark_logo.png"]
-
-================================
-
 midkar.com
 
 CSS
 body {
     background-image: unset !important;
 }
+
+================================
+
+mobiel.nl
+
+INVERT
+.credit-warning__image
+.dt-carousel-home__dots
+.spec__network
+img[alt="Tele2"]
+img[alt="hollandsnieuwe"]
+.header-main__icon
+.spec__network-ready
+
+IGNORE INLINE STYLE
+.version-without-subscription-row__color
+.gEJLdA
 
 ================================
 
@@ -2460,6 +2661,38 @@ CSS
 
 ================================
 
+naszemiasto.pl
+
+INVERT
+.componentsNavigationNavbar
+.atomsNavigationFooterLegal
+.componentsSiteHeader
+.atomsNavigationFooterAccordion
+.atomsNavigationFooterSocialmedia__link
+.atomsNavigationFooterSocialmedia__button
+.atomsArticlePollVoting__pulseDescription
+.atomsArticlePollVoting__form
+.atomsArticlePollVoting__voteTitle
+.componentsArticleGallery__captionDescription
+.componentsPromotionsVideo__title
+.layoutsGrid
+aside .atomsArticleTile__tileImg
+.componentsArticleGallery__img
+.componentsArticleGallery__thumbnail
+.atomsArticleFootTools__button
+.componentsPromotionsOffers__fakeImg
+.atomsNavigationFooterLinks__logoImg
+.ytp-cued-thumbnail-overlay
+.componentsPromotionsSubjectCategoryPromoted__image
+.componentsRecommendationsSelected__photo
+p.nieprzeczytane
+p.przeczytane
+article iframe
+.atomsPromotionsQuiz__imageWrapper
+.atomsPromotionsLink__imageWrapper
+
+================================
+
 natemat.pl
 
 INVERT
@@ -2484,6 +2717,13 @@ news.ycombinator.com
 
 INVERT
 .votearrow
+
+================================
+
+nexojornal.com.br
+
+INVERT
+.g-aiImg
 
 ================================
 
@@ -2613,6 +2853,13 @@ CSS
 
 ================================
 
+omnicalculator.com
+
+INVERT
+.GenericText
+
+================================
+
 onet.pl
 
 INVERT
@@ -2637,6 +2884,13 @@ CSS
 .weatherMap .mapLayer .fil0, #weatherChartsHolder .chartValue {
     fill: rgb(128, 128, 128) !important;
 }
+
+================================
+
+online.noordhoff.nl
+
+INVERT
+#EAGABA img
 
 ================================
 
@@ -2743,6 +2997,15 @@ ozbargain.com.au
 CSS
 div.comment-op {
     background-image: linear-gradient(#000000, #212121) !important;
+}
+
+================================
+
+p30download.com
+
+CSS
+.article-wrapper {
+    color: ${#090702} !important;
 }
 
 ================================
@@ -3449,6 +3712,23 @@ CSS
 
 ================================
 
+tailwindcss.com
+
+CSS
+.bg-white:not(#docsearch), .bg-gray-100 {
+    --bg-opacity: none !important;
+}
+.text-gray-900, .hover\:text-gray-900:hover,
+h1, h2, h3,
+h4, h5, h6 {
+    --text-opacity: none !important;
+}
+.bg-center {
+    background: none !important;
+}
+
+================================
+
 tc39.es
 
 INVERT
@@ -3519,6 +3799,15 @@ INVERT
 
 ================================
 
+themoviedb.org
+
+CSS
+.card {
+    background-color: ${#dfe1e2} !important;
+}
+
+================================
+
 thenextweb.com
 
 INVERT
@@ -3585,6 +3874,16 @@ INVERT
 .clear
 .swap > .jfk-button-img
 .morebutton
+.close-button
+.ita-kd-icon-button
+.ita-kd-menuitem-inputtool-icon
+.ita-kd-checkbox
+.vk-t-btn
+.vk-sf-b
+.ita-hwt-backspace-img
+.ita-hwt-enter-img
+.ita-hwt-grip
+.gt-ex-quote
 
 CSS
 .copybutton .jfk-button-img {
@@ -3675,6 +3974,31 @@ INVERT
 #shareButton::after
 .listbox-option::after
 #shareCopyLink::after
+
+================================
+
+treccani.it
+*.treccani.it
+
+CSS
+.treccani_portal .wrapper, .treccani_portal body {
+    background-color: ${white} !important;
+}
+.module-search-preview-more_results .module-search-preview-more_results-related_container {
+    background-color: ${lightgray} !important;
+}
+.module-widget .widget-bg {
+    background-color: ${lightgray} !important;
+}
+.article_template-bg-text-medium .block .block-content {
+    background-color: ${lightgray} !important;
+}
+.module-footer .footer-colophon {
+    background-color: ${lightgray} !important;
+}
+#nav-icon3 span {
+    background-color: ${black} !important;
+}
 
 ================================
 
@@ -3906,6 +4230,21 @@ body {
 
 ================================
 
+vrt.be/vrtnws
+
+INVERT
+.vrt-site-header__home>svg
+
+CSS
+article:hover::before {
+    background-color: ${white} !important;
+}
+.vrt-site-header__container::before {
+    background-color: transparent !important;
+}
+
+================================
+
 w3.org
 
 INVERT
@@ -3951,9 +4290,6 @@ CSS
 
 web.whatsapp.com
 
-IGNORE INLINE STYLE
-path[fill="currentColor"]
-
 INVERT
 .selectable-text > span._3PxOr
 span[data-icon="audio-download"]
@@ -3980,6 +4316,9 @@ span[data-icon="tail-out"] {
 .message-out span > div[style="opacity: 1;"] {
     background: transparent !important;
 }
+
+IGNORE INLINE STYLE
+path[fill="currentColor"]
 
 ================================
 
@@ -4097,9 +4436,6 @@ INVERT
 
 wikipedia.org
 
-IGNORE INLINE STYLE
-.legend-color
-
 INVERT
 .mwe-math-element
 .mw-ext-score
@@ -4107,12 +4443,10 @@ INVERT
 .central-textlogo__image
 .svg-Wikimedia-logo_black
 .header .branding-box > a > span > img
+.main-footer-menuToggle
 img[src$=".svg.png"]
 
 CSS
-div .mw-parser-output ul {
-    list-style-image: none !important;
-}
 div .thumbimage[src$=".png"],
 div .thumbimage img[src$=".png"] {
     background-color: white;
@@ -4123,6 +4457,31 @@ a[href$=".svg"]:hover > img {
     background-color: rgba(255, 255, 255, 0.75) !important;
     background-blend-mode: color;
 }
+.diff-addedline .diffchange {
+    background-color: ${lightblue} !important;
+}
+.diff-deletedline .diffchange {
+    background-color: ${#feeec8} !important;
+}
+@keyframes unseen-fadeout-to-unread {
+    from {
+        background-color: ${#dce8ff} !important;
+    }
+    to {
+        background-color: ${#ffffff} !important;
+    }
+}
+@keyframes unseen-fadeout-to-read {
+    from {
+        background-color: ${#dce8ff} !important;
+    }
+    to {
+        background-color: ${#eaecf0} !important;
+    }
+}
+
+IGNORE INLINE STYLE
+.legend-color
 
 ================================
 
@@ -4130,7 +4489,8 @@ wikiwand.com
 
 INVERT
 img.mwe-math-fallback-image-inline
-img.immediate.ntmb
+img.immediate:not(.ntmb)
+.title_icon
 img.logo_img
 td.icon
 li.menu-tooltip:not(.lang_btn)
@@ -4210,9 +4570,6 @@ body, .BA-topbg {
 www.google.*
 www.google.*.*
 
-IGNORE INLINE STYLE
-.kdPwrb
-
 INVERT
 .gb_hc
 .gb_ec
@@ -4230,6 +4587,9 @@ CSS
 .Gor6zc {
     background-color: white !important;
 }
+
+IGNORE INLINE STYLE
+.kdPwrb
 
 ================================
 
@@ -4325,6 +4685,21 @@ CSS
 .hb-trigger:hover .hb-trigger-inner, .hb-trigger:hover .hb-trigger-inner::before, .hb-trigger:hover .hb-trigger-inner::after, .hb-trigger:active .hb-trigger-inner, .hb-trigger:active .hb-trigger-inner::before, .hb-trigger:active .hb-trigger-inner::after, .hb-trigger:focus .hb-trigger-inner, .hb-trigger:focus .hb-trigger-inner::before, .hb-trigger:focus .hb-trigger-inner::after {
     background-color: ${black} !important;
 }
+
+================================
+
+xfree86.org
+
+INVERT
+img[src*=".png"]
+
+================================
+
+youmath.it
+*.youmath.it
+
+INVERT
+.ltximg
 
 ================================
 
@@ -4521,7 +4896,7 @@ html:not(.style-scope) {
 .ytp-volume-slider-handle::after {
     background-color: rgba(255,255,255,.2) !important;
 }
-ytd-toggle-button-renderer.style-default-active[is-icon-button] {
+.ytd-toggle-button-renderer #button.style-default-active {
     color: var(--yt-spec-call-to-action) !important;
 }
 .ytp-menuitem-toggle-checkbox {
@@ -4587,7 +4962,7 @@ CSS
 
 ================================
 
-zhuanlan.zhihu.com
+zhihu.com
 
 INVERT
 img[eeimg="1"]
