@@ -489,10 +489,27 @@ INVERT
 
 ================================
 
+academic.microsoft.com
+
+INVERT
+.loader
+
+CSS
+.legend > rect:nth-child(1) {
+    fill: unset !important;
+}
+
+================================
+
 accounts.google.com
 
 INVERT
 img[src$="signin_tapyes.gif"]
+
+CSS
+#countryList div[role="option"][data-value] > div > div > div[style] {
+    background-image: url('//ssl.gstatic.com/i18n/flags/48x32/nobevel/66bdb7a1bbbdbf86a67de382fac49ecc/flags.png') !important;
+}
 
 ================================
 
@@ -536,6 +553,15 @@ svg.reviews__icon-topic
 .article__section--list-ico .md__list .md__img
 .article__content--title-ico .article__section .md__title .md__img
 .p-header-logo.p-header-logo--image img
+
+================================
+
+ai2.appinventor.mit.edu
+
+CSS
+.blocklyDraggable text {
+    color: var(--darkreader-neutral-text) !important;
+}
 
 ================================
 
@@ -727,6 +753,19 @@ CSS
 
 ================================
 
+answers.opencv.org
+
+CSS
+#header,
+body,
+#question-list,
+.short-summary,
+#ground {
+    background-image: none !important;
+}
+
+================================
+
 answers.unity.com
 
 IGNORE IMAGE ANALYSIS
@@ -831,6 +870,15 @@ INVERT
 
 ================================
 
+arxiv.org
+
+CSS
+.abstract {
+     background-color: transparent !important;
+}
+
+================================
+
 asana.com
 
 INVERT
@@ -913,10 +961,27 @@ CSS
 
 ================================
 
+bab.la
+
+INVERT
+.logo-flash
+
+================================
+
 baike.baidu.com
 
 INVERT
 .formula
+
+================================
+
+bbb*.
+demo*.bigbluebutton.org
+
+CSS
+div[class*="scrollableList"] {
+    background: none;
+}
 
 ================================
 
@@ -964,6 +1029,7 @@ INVERT
 ================================
 
 bbs.chinauos.com
+bbs.deepin.org
 
 INVERT
 .post_tip
@@ -1009,7 +1075,7 @@ body {
 beta.protonmail.com
 
 CSS
-.label-stack-item-button {
+.label-stack-item {
     background-color: var(--color,currentColor) !important;
 }
 .items-column-list-inner {
@@ -1175,6 +1241,13 @@ nav.pagination {
 
 ================================
 
+blog.doist.com
+
+INVERT
+.db-header__logo-img
+
+================================
+
 blogger.com
 
 INVERT
@@ -1230,6 +1303,13 @@ INVERT
 
 ================================
 
+boredpanda.com
+
+INVERT
+.logotype
+
+================================
+
 br.de
 
 CSS
@@ -1246,6 +1326,14 @@ brainly.com
 
 INVERT
 .brn-rich-content > p > img
+
+================================
+
+brainly.pl
+
+INVERT
+[id^="TexFormula"]
+div.brn-qpage-next-answer-box__content > div > div > div img:not(.brn-qpage-next-attachments-viewer-image-preview__image)
 
 ================================
 
@@ -1434,6 +1522,15 @@ body {
 
 ================================
 
+clever.com
+
+CSS
+img[alt="i-Ready icon"], img[alt="Google Meet icon"], img[alt="Google icon"] {
+    background-color: white !important;
+}
+
+================================
+
 cloud.databricks.com
 pages.databricks.com
 *.azuredatabricks.net
@@ -1520,6 +1617,7 @@ INVERT
 .roundbox-lb
 .roundbox-rb
 .delete-resource-link
+a.contestParticipantCountLinkMargin > img
 
 ================================
 
@@ -1544,6 +1642,13 @@ INVERT
 
 IGNORE INLINE STYLE
 text
+
+================================
+
+computerhope.com
+
+INVERT
+#text-tool > p > img
 
 ================================
 
@@ -1703,6 +1808,21 @@ cs61a.org
 CSS
 table#calendar td {
     border-color: var(--darkreader-neutral-background) !important;
+}
+
+================================
+
+cynkra.com
+
+INVERT
+.btn-outline-dark
+.shadow
+.navbar-dark .navbar-brand
+.cynkra-logo-font
+
+CSS
+.btn-outline-secondary {
+    color: var(--darkreader-neutral-text) !important;
 }
 
 ================================
@@ -1911,6 +2031,10 @@ developer.mozilla.org
 
 INVERT
 mark
+.icon-thumbs-down-alt
+.bc-head-icon-edge::before
+.last-modified::before
+.newsletter-hide > svg
 
 ================================
 
@@ -1951,6 +2075,9 @@ CSS
 ================================
 
 discord.com
+
+INVERT
+div[class^="botPermissions"] > ul > li > div > div > span::after
 
 CSS
 div[class^="pill"][class*="wrapper"] > span[class^="item"],
@@ -2003,6 +2130,15 @@ INVERT
 
 ================================
 
+dlagentlemana.pl
+
+INVERT
+div.f-grid-3.logo-column > a > img
+div.opineo-side-slider-widget > button
+.logo-bar img
+
+================================
+
 dmit.io
 
 INVERT
@@ -2030,6 +2166,13 @@ dnslytics.com
 
 INVERT
 img[src*="logo.png"]
+
+================================
+
+docs.codacy.com
+
+INVERT
+div.footer-logo > img[alt="Codacy"]
 
 ================================
 
@@ -2095,6 +2238,9 @@ CSS
 .ndfHFb-c4YZDc.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Bz112c:not([onclick]):not(:link):not(:visited) {
     background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite26.svg') !important;
 }
+.docs-title-input-label:not([style*="pointer-events: auto"]) > #docs-title-input-label-inner {
+    visibility: hidden !important;
+}
 
 ================================
 
@@ -2127,18 +2273,16 @@ drive.google.com
 
 INVERT
 img[src$="google_gsuite"]
+div[role="menuitem"] svg
 
 CSS
-.ndfHFb-c4YZDc.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Bz112c:not([onclick]):not(:link):not(:visited) {
-    background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite26.svg') !important;
+div[role="toolbar"] div[role="button"] > div[class*='-']:not([onclick]):not(:link):not(:visited):not([style*="background-image"]):first-child,
+div[role="toolbar"] div[role="button"] > div[class*='-']:not([onclick]):not(:link):not(:visited) > :nth-child(2) > div {
+    background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite33.svg') !important;
 }
 
 IGNORE INLINE STYLE
 div[role="presentation"] svg
-svg.a-nEbBXb-c.a-s-fa-Ha-pa
-
-IGNORE IMAGE ANALYSIS
-div.a-b.a-b-ja-el-db.a-b-Oe-n.a-b-L.a-b-Na
 
 ================================
 
@@ -2236,6 +2380,13 @@ INVERT
 
 ================================
 
+ebooks.cpm.org
+
+INVERT
+img[alt="Review and Preview problems below"]
+
+================================
+
 education.github.com
 
 INVERT
@@ -2289,6 +2440,20 @@ elearning.utdallas.edu
 INVERT
 .contentBox.contentBox-edit
 .content.clearfix
+
+================================
+
+electrical-symbols.com
+
+INVERT
+.table-striped img
+
+================================
+
+elp.northumbria.ac.uk
+
+INVERT
+.selected-answer
 
 ================================
 
@@ -2728,6 +2893,19 @@ div[class*="modal--modalShadow"] div
 
 filmweb.pl
 
+INVERT
+.ribbonLbl
+.isInit.ribbon[data-state="1"]::after
+.isInit.ribbon[data-state="2"]::after
+.isInit.ribbon[data-state="3"]::after
+.isInit.ribbon[data-state="4"]::after
+.isInit.ribbon[data-state="5"]::after
+.isInit.ribbon[data-state="6"]::after
+.isInit.ribbon[data-state="7"]::after
+.isInit.ribbon[data-state="8"]::after
+.isInit.ribbon[data-state="9"]::after
+.isInit.ribbon[data-state="10"]::after
+
 CSS
 .filmInfo__info {
     color: var(--darkreader-neutral-text) !important;
@@ -2773,7 +2951,6 @@ INVERT
 .detail-data-panel__icon
 .sleep-chart-yaxis.end
 .supergraph-canvas
-.zone1desc
 
 CSS
 .highcharts-container svg {
@@ -2788,9 +2965,10 @@ CSS
 .maxhighlightval, .maxhighlightname {
     color: rgb(0, 0, 0) !important;
 }
-.zone1desc {
-    color: ${#ffffff} !important;
-}
+
+IGNORE INLINE STYLE
+.zonebox
+.zonestartbox
 
 ================================
 
@@ -2846,6 +3024,15 @@ img[src="/foobarlogo.png"]
 
 ================================
 
+foolcontrol.org
+
+CSS
+html {
+    background-color: transparent !important;
+}
+
+================================
+
 forum.miranda-ng.org
 
 CSS
@@ -2891,6 +3078,14 @@ forvo.com
 
 INVERT
 img[src$="layout/logo.svg"]
+
+================================
+
+funpay.ru
+
+INVERT
+.logo-color
+.logo
 
 ================================
 
@@ -2942,6 +3137,13 @@ CSS
 img.listview__image, img.galleryview__image, .variant__header__dropdown__item__icon img  {
     mix-blend-mode: normal !important;
 }
+
+================================
+
+genius.com
+
+INVERT
+.texmath
 
 ================================
 
@@ -3053,26 +3255,6 @@ CSS
     background-color: #ffffff1a !important;
     border-radius: 2pt !important;
 }
-.day[fill="#ebedf0"], .legend li[style*="background-color: rgb(235, 237, 240)"] {
-    fill: ${#ebedf0} !important;
-    background-color: ${#ebedf0} !important;
-}
-.day[fill="#9be9a8"], .legend li[style*="background-color: rgb(155, 233, 168)"] {
-    fill: ${#9be9a8} !important;
-    background-color: ${#9be9a8} !important;
-}
-.day[fill="#40c463"], .legend li[style*="background-color: rgb(64, 196, 99)"] {
-    fill: ${#40c463} !important;
-    background-color: ${#40c463} !important;
-}
-.day[fill="#30a14e"], .legend li[style*="background-color: rgb(48, 161, 78)"] {
-    fill: ${#30a14e} !important;
-    background-color: ${#30a14e} !important;
-}
-.day[fill="#216e39"], .legend li[style*="background-color: rgb(33, 110, 57)"] {
-    fill: ${#216e39} !important;
-    background-color: ${#216e39} !important;
-}
 .blob-num:not(.cc-coverage-covered-border):not(.cc-coverage-missed-border) {
     border-right: 0 !important;
 }
@@ -3107,6 +3289,194 @@ CSS
 }
 :root {
     --color-previewable-comment-form-bg: var(--darkreader-neutral-background) !important;
+    --color-calendar-graph-day-bg: ${#ebedf0} !important;
+    --color-calendar-graph-day-L1-bg: ${#9be9a8} !important;
+    --color-calendar-graph-day-L2-bg: ${#40c463} !important;
+    --color-calendar-graph-day-L3-bg: ${#30a14e} !important;
+    --color-calendar-graph-day-L4-bg: ${#216e39} !important;
+}
+.Box,
+.form-select,
+.menu,
+.color-bg-primary,
+.bg-white,
+.page-responsive .HeaderMenu--logged-out,
+.markdown-body table tr,
+.markdown-body img,
+.Box--overlay,
+.gh-header,
+.gh-header .gh-header-sticky.is-stuck+.gh-header-shadow,
+.timeline-comment,
+.new-discussion-timeline .composer .comment-form-head.tabnav,
+.discussion-timeline-actions,
+.pagination-loader-container,
+.pagehead-tabs-item.selected,
+.reponav-item.selected,
+.steps li.current,
+#subtasks.is-comment-editing,
+.advisory-form .form-actions,.advisory-form .form-control,.advisory-form .previewable-comment-form,
+.credit-card.normal .signature,
+.billing-addon-items tr.total-row,
+.billing-credit-card .javascript-disabled-overlay,
+.plan-choice.open,.plan-choice.selected,
+.CopyBlock:active,.CopyBlock:focus,.CopyBlock:hover,
+.CodeMirror-hints,
+.branch-action-body,
+.coupons .coupon-form-body,
+.dashboards-overview-cards .blankslate,
+.file .image .border-wrap,
+.MarketplaceSideNav,
+.news .alert .gravatar,
+.news .commits li img,
+.thread-subscription-status,
+.auto-search-group .spinner,
+.manage-repo-access-group,
+.manage-memberships-tabs-item.selected,
+.theme-picker,
+.theme-picker-spinner,
+.page-preview,
+.project-header,
+.projects-comment-form .comment-form-head .toolbar-commenting,
+.user-profile-nav,
+.pr-toolbar.is-stuck,
+.diffbar,
+.review-comment .is-comment-editing,
+.review-thread-reply .inline-comment-form,
+.review-summary-form-wrapper,
+.is-bad-file .repo-file-upload-errors,.is-empty .repo-file-upload-errors,.is-failed .repo-file-upload-errors,.is-hidden-file .repo-file-upload-errors,.is-too-big .repo-file-upload-errors,.is-too-many .repo-file-upload-errors,
+.setup-info-module,
+.orgs-help-item-octicon,
+.sponsors-goals-avatar-border,
+.business-sso .business-sso-panel,.business-sso .org-sso-panel,.org-sso .business-sso-panel,.org-sso .org-sso-panel,
+.user-status-circle-badge,
+.hx_flex-avatar-stack-item .avatar,
+.tabnav--responsive .tabnav-tab.selected,.tabnav--responsive .tabnav-tab[aria-selected=true] {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+mark,
+[data-color-mode],
+body,
+.Box-row-link,
+.breadcrumb-item-selected,.breadcrumb-item[aria-current]:not([aria-current=false]),
+.close-button:hover,
+.social-count,
+.form-control,.form-select,
+p.explain strong,
+.radio-label,
+.Link--primary,.link-gray-dark,
+.menu-item,
+.tabnav-tab.selected,.tabnav-tab[aria-current]:not([aria-current=false]),.tabnav-tab[aria-selected=true],
+.tabnav-tab:focus,.tabnav-tab:hover,
+.SideNav-item,
+.SideNav-subItem:focus,.SideNav-subItem:hover,
+.SideNav-subItem[aria-current]:not([aria-current=false]),.SideNav-subItem[aria-selected=true],
+.subnav-item,
+.pagination a,.pagination em,.pagination span,
+.color-text-primary,
+.text-gray-dark,
+.text-emphasized,
+.session-authentication .auth-form-header,
+.page-responsive .HeaderMenu--logged-out .header-search-input,
+.page-responsive .HeaderMenu-link:hover,
+.page-responsive .HeaderMenu-details[open] .HeaderMenu-link,
+.header-nav-current-user .user-profile-link,
+.jump-to-field-active,
+.autocomplete-item,
+.dropdown-item,
+.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link,
+.markdown-body span.frame span span,
+.SelectMenu-item,
+.SelectMenu-tab[aria-selected=true],
+.SelectMenu-item[aria-checked=true],
+.SelectMenu-closeButton:hover,body:not(.intent-mouse) .SelectMenu-closeButton:focus,
+.SelectMenu-tab:hover,
+.SelectMenu-tab:not([aria-selected=true]):active,
+.list-group-item-link,
+.select-menu-modal,
+.select-menu-divider,.select-menu-header .select-menu-title,
+.select-menu-tabs .select-menu-tab-nav:hover,.select-menu-tabs a:hover,
+.select-menu-tabs .select-menu-tab-nav.selected,.select-menu-tabs .select-menu-tab-nav[aria-selected=true],.select-menu-tabs a.selected,.select-menu-tabs a[aria-selected=true],
+.select-menu-blankslate h3,
+.select-menu-item.selected,details-menu .select-menu-item[aria-checked=true],details-menu .select-menu-item[aria-selected=true],
+.select-menu-item.selected>.octicon,details-menu .select-menu-item[aria-checked=true]>.octicon,details-menu .select-menu-item[aria-selected=true]>.octicon,
+.table-list-header-toggle .btn-link:hover,
+.table-list-header-toggle .btn-link.selected,.table-list-header-toggle .btn-link.selected:hover,
+.table-list-header-toggle .select-menu-button.selected,.table-list-header-toggle .select-menu-button.selected:hover,.table-list-header-toggle .select-menu-button:hover,
+.breadcrumb strong.final-path,
+.commit-author-section,
+.commits-list-item .commit-title,
+.signed-commit-signer-name .signer,
+.toc-select .select-menu-item-heading,.toc-select .select-menu-item-text,
+.blob-code-inner,
+.timeline-comment,
+.team-mention,.user-mention,
+.pagehead-actions>li,
+.pagehead-tabs-item:hover,
+.pagehead-tabs-item.selected,
+.reponav-item:focus,.reponav-item:hover,
+.reponav-item.selected,
+.steps li.current,
+.prose-diff.collapsed .rich-diff-level-zero.expandable:only-child:hover:before,
+.protip strong,
+.billing-addon-items td.black,
+.CodeMirror-hint,
+[data-color-mode=dark] .CheckRunContainer.bg-gray-dark .text-white,
+[data-color-mode=auto] .CheckRunContainer.bg-gray-dark .text-white,
+[data-color-mode=dark] .CheckStep-header-dropdown-menu .dropdown-item,
+[data-color-mode=auto] .CheckStep-header-dropdown-menu .dropdown-item,
+[data-color-mode=dark] .CheckStep[open] .CheckStep-header,
+[data-color-mode=auto] .CheckStep[open] .CheckStep-header,
+[data-color-mode=dark] .CheckStep[open] .CheckStep-header-label,
+[data-color-mode=auto] .CheckStep[open] .CheckStep-header-label,
+[data-color-mode=dark] .CheckRun-header .btn-link:hover:not([disabled]),[data-color-mode=dark] .CheckRun-header .btn.btn-link:hover:not([disabled]) .octicon,
+[data-color-mode=auto] .CheckRun-header .btn-link:hover:not([disabled]),[data-color-mode=auto] .CheckRun-header .btn.btn-link:hover:not([disabled]) .octicon,
+[data-color-mode=dark] .CheckRun-log-title,
+[data-color-mode=auto] .CheckRun-log-title,
+.CheckRun-search-input:focus,
+[data-color-mode=dark] .CheckRun-header .CheckRun-search-input:focus,
+[data-color-mode=auto] .CheckRun-header .CheckRun-search-input:focus,
+[data-color-mode=dark] .CheckStep-line:hover,
+[data-color-mode=auto] .CheckStep-line:hover,
+[data-color-mode=dark] .CheckStep-line.selected,
+[data-color-mode=auto] .CheckStep-line.selected,
+.CheckStep-line .dt-fm,
+.CommunityTemplate-highlight,
+.dashboard-notice h2,
+.icon-discussion-gray,
+.emoji-tab[role=tab][aria-selected=true],
+.exploregrid-item-title,
+.select-menu-item.navigation-focus>.octicon.label-options-icon,.select-menu-item[aria-selected=true]>.octicon.label-options-icon,
+.repository-lang-stats ol.repository-lang-stats-numbers li .lang,
+.marketplace-plan-emphasis,
+.topic-tag-contrast .delete-topic-link,
+.merge-branch-heading,
+.notifications-list-item.notification-unread .notification-list-item-link,
+.notifications-list-item:hover .notification-list-item-link,
+.notifications-list-item.navigation-focus .notification-list-item-link,
+.oauth-permissions-details .permission-title,
+.oauth-org-access-details .oauth-org-item.on strong,
+.oauth-application-whitelist .request-info strong,
+.oauth-application-info .application-title,
+.developer-app-item .developer-app-name,
+.orghead,
+.add-member-team-list .team-info,
+.manage-repo-access-not-active,
+.manage-memberships-tabs-item.selected,
+.btn:not(.btn-outline),
+.review-comment,
+.repo-file-upload-tree-target,
+.access-token .token-description,
+.token-scope,
+.repository-settings-actions [role=tab][aria-selected=true],
+.shelf-dismiss .close-button:hover,
+.typeahead-result,
+.user-status-message-wrapper,
+.actions-workflow-navigation .row-child:hover,
+.hx_breadcrumb-header-dropdown .dropdown-item:hover {
+    color: var(--darkreader-neutral-text) !important;
+}
+.Box-row--yellow {
+    background-color: ${#fffbdd} !important;
 }
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
@@ -3130,6 +3500,15 @@ github.myshopify.com
 INVERT
 .site-header__logo-image
 .column-gh.column-full>svg
+
+================================
+
+githubstatus.com
+
+CSS
+.illo-desktop-header {
+    z-index: 0 !important;
+}
 
 ================================
 
@@ -3291,6 +3670,15 @@ INVERT
 
 ================================
 
+guitarcenter.pl
+
+INVERT
+tr > td > img
+p.standard_price
+p.promo_price
+
+================================
+
 habr.com
 
 INVERT
@@ -3326,6 +3714,16 @@ main article img {
     brightness(110%)
     contrast(80%)
 }
+
+================================
+
+hbr.org
+
+INVERT
+.hamburger-icon
+.top-header--logo
+.search-icon
+.footer-logo
 
 ================================
 
@@ -3513,7 +3911,7 @@ INVERT
 img[src$="github.ico"]
 img[src$="unsplash.png"]
 img[src$="boardreader.ico"]
-#black_logo
+#logo_img_home[src$="logo_text_black.png"]
 
 ================================
 
@@ -3868,6 +4266,36 @@ CSS
 
 ================================
 
+kfccoupons.co.nz
+
+CSS
+.img-container {
+    z-index: 0 !important;
+}
+.img-container > img {
+    filter: brightness(50%) sepia(40%) !important;
+}
+
+================================
+
+kinoart.ru
+
+INVERT
+main > div > svg
+header > a > svg
+footer > div > svg
+header > div > a > svg
+
+================================
+
+knife.media
+
+INVERT
+svg[class$="logo-image"]
+.explorer__header-close
+
+================================
+
 komputerswiat.pl
 
 INVERT
@@ -3890,6 +4318,13 @@ CSS
 a {
     color: #3391ff !important;
 }
+
+================================
+
+languagetool.org
+
+INVERT
+#checktext_ifr
 
 ================================
 
@@ -3992,9 +4427,36 @@ IGNORE IMAGE ANALYSIS
 
 ================================
 
-linkedin.com
+lightning.force.com
 
 CSS
+.slds-brand-band,
+.slds-brand-band:after,
+.slds-brand-band_cover,
+.slds-brand-band_medium,
+.slds-page-header,
+.slds-clearfix {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.slds-card {
+    background-color: #333333 !important;
+}
+.slds-button_neutral,
+.slds-button--neutral {
+    color: rgb(20, 150, 20) !important;
+}
+
+================================
+
+linkedin.com
+
+INVERT
+img[src*="company-logo"]
+
+CSS
+:root {
+    --color-text-low-emphasis: ${rgba(0,0,0,0.6)};
+}
 .js-job-card-company-logo {
     background-color: rgba(255, 255, 255, 0.20);
     background-blend-mode: color;
@@ -4016,6 +4478,13 @@ li-icon[type="linkedin-logo"],
 }
 .vjs-volume-bar {
     background-color: hsla(0,0%,100%,.4) !important;
+}
+.ghost-company,
+.ghost-person {
+    background-size: 100% 100% !important;
+}
+.artdeco-pill {
+    background-color: ${#ccc} !important;
 }
 
 ================================
@@ -4180,6 +4649,13 @@ td {
 
 ================================
 
+magazine.skyeng.ru
+
+INVERT
+.header__logo__img
+
+================================
+
 magazynbieganie.pl
 
 INVERT
@@ -4259,6 +4735,15 @@ IGNORE INLINE STYLE
 .ajZ-Jt
 .aH5
 .JA-Kn-Jr-Kw-Jt
+
+================================
+
+mail.protonmail.com
+
+CSS
+.customCheckbox-input + .customCheckbox-mask {
+    background: #262829 !important;
+}
 
 ================================
 
@@ -4582,6 +5067,19 @@ path[fill-rule="evenodd"]
 
 ================================
 
+mnt.ee
+
+CSS
+#zone-content-wrapper {
+    color: var(--darkreader-neutral-text) !important;
+}
+
+#zone-content {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+
+================================
+
 mobiel.nl
 
 INVERT
@@ -4756,6 +5254,22 @@ CSS
 
 ================================
 
+music.amazon.*
+
+CSS
+.listViewStatusButtonInLibrary .add,
+.listViewStatusButtonInLibrary .added {
+    background-color: ${black} !important;
+}
+
+.slider .scrubber,
+.slider .scrubberHandle,
+.slider .sliderTrackRemainder {
+    background-color: ${black} !important;
+}
+
+================================
+
 my.bible.com
 
 CSS
@@ -4773,6 +5287,11 @@ img[src*="/static/media/samsung"]
 img[src*="/static/media/sonos"]
 a.d-none.d-md-inline
 
+CSS
+.text-right[style*="opacity: 0.3"] {
+    opacity: 0.6 !important;
+}
+
 ================================
 
 my.nintendo.com
@@ -4782,6 +5301,13 @@ CSS
 .signUpButton {
     background-image: none !important;
 }
+
+================================
+
+myaccount.google.com
+
+INVERT
+c-wiz ul img
 
 ================================
 
@@ -4853,6 +5379,13 @@ news.ycombinator.com
 
 INVERT
 .votearrow
+
+================================
+
+newyorker.com
+
+INVERT
+.responsive-image__image
 
 ================================
 
@@ -5100,6 +5633,7 @@ INVERT
 .weatherIcon
 ul.contentList img.icon
 ._3ZySwSLi_pur0unnAQO2No
+.WeatherDay_tempIcon__3Uzdm
 
 CSS
 .mainBoxBgHolder {
@@ -5305,6 +5839,23 @@ CSS
 
 ================================
 
+pixiv.net
+
+CSS
+.jAENWx,
+.iYRMgo {
+    color: ${aliceblue} !important;
+}
+
+================================
+
+pl.glosbe.com
+
+INVERT
+footer > div > div > a > img
+
+================================
+
 play.golang.org
 
 CSS
@@ -5382,6 +5933,13 @@ INVERT
 
 ================================
 
+postnauka.ru
+
+INVERT
+.m-header__logo
+
+================================
+
 praca.money.pl
 
 CSS
@@ -5398,6 +5956,9 @@ img[alt="Praca.pl"]
 .listing__logo
 .app-offer__logo-img
 .company__img
+.employer-profile-header .logo img
+.company-job-list .logo img
+.epc-other-employers .logo img
 
 CSS
 .app-offer__content {
@@ -5541,6 +6102,9 @@ CSS
 .logo_fill {
     fill: rgb(219, 87, 83) !important;
 }
+body {
+    background-color: var(--darkreader-neutral-background) !important; 
+}
 
 ================================
 
@@ -5586,6 +6150,9 @@ IGNORE IMAGE ANALYSIS
 ================================
 
 reddit.com
+
+INVERT
+#COIN_PURCHASE_DROPDOWN_ID > div > span
 
 CSS
 [style^="--pseudo-before-background"] {
@@ -5985,6 +6552,15 @@ CSS
 
 ================================
 
+shop.dr-rath.com
+
+CSS
+.colored-header-desktop {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+
+================================
+
 shopify.com
 shopify.dev
 
@@ -6001,6 +6577,13 @@ signin.nianticlabs.com
 
 INVERT
 img[alt="Niantic"]
+
+================================
+
+sio2.staszic.waw.pl
+
+INVERT
+.texmath
 
 ================================
 
@@ -6133,6 +6716,18 @@ CSS
 
 ================================
 
+sourcegraph.com
+
+INVERT
+.header__logo
+
+CSS
+body {
+    background-image: none !important;
+}
+
+================================
+
 soylent.com
 
 INVERT
@@ -6164,6 +6759,46 @@ INVERT
 CSS
 .top_section_bg, .bottom_section_bg {
     background: ${#e5e5e5} !important;
+}
+
+================================
+
+sporza.be
+
+CSS
+.sc-score, 
+.sc-score__away,
+.bouton:hover {
+    color: ${#222} !important;
+}
+.sc-score__wrapper {
+    background-color: ${#BBB} !important;
+}
+.bouton {
+    color: ${#fff} !important;
+}
+.sc-epg--live .sc-epg__program {
+    background-color: ${#CCC} !important;
+}
+.vrt-newsletter {
+    background-color: ${#EEE} !important;
+}
+.vrt-site-footer .vrt-newsletter .vrt-link--newsletter {
+    background-color: ${#AAA} !important;
+}
+.logo__letters {
+    fill: var(--darkreader-neutral-background) !important;                                                                                                                                                                                                                                                                                                                                                              
+}
+.vrt-link {
+    background-color: ${rgba(255, 165, 0, 0)} !important;
+    color: ${rgba(50, 50, 50)} !important;
+}
+.vrt-link:hover {
+    background-color: ${rgb(100, 100, 100)} !important;
+}
+.vrt-site-footer__navigation--green {
+    background-color: ${#AAA} !important;
+    color: var(--darkreader-neutral-background) !important;                                                                                                                                                                                                                                                                                                                                                                                                                     
 }
 
 ================================
@@ -6226,6 +6861,13 @@ INVERT
 .icon-dark
 .labelGroup
 #effort-box
+.gear::after
+.icon-lg
+.icon-edit
+.weekly-goal svg
+.week.clearfix svg
+.activity-map img
+img.leaflet-tile-loaded:not([src*="satellite"])
 
 CSS
 .base-chart .grid-line,
@@ -6260,6 +6902,10 @@ CSS
 #infoBox text {
   color: black;
 }
+
+IGNORE IMAGE ANALYSIS
+.app-icon.icon-nav-training
+.app-icon.icon-fb
 
 ================================
 
@@ -6558,6 +7204,13 @@ CSS
 .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
     background-color: ${black} !important;
 }
+
+================================
+
+thecode.media
+
+INVERT
+img[src$="/logo.svg"]
 
 ================================
 
@@ -6900,6 +7553,13 @@ INVERT
 img[title*="ТНС энерго"]
 img[src="/img/refresh.png"]
 img[src="/img/logout-black.png"]
+
+================================
+
+todoist.com
+
+INVERT
+.ist_button_apple > img
 
 ================================
 
@@ -7269,6 +7929,13 @@ div.menu {
 
 ================================
 
+un.org
+
+INVERT
+a.logo[title="United Nations"]
+
+================================
+
 underconsideration.com/brandnew
 
 CSS
@@ -7359,6 +8026,13 @@ CSS
 
 ================================
 
+uteka.ru
+
+INVERT
+.header-main__logo
+
+================================
+
 valgrind.org
 
 CSS
@@ -7372,6 +8046,15 @@ vandale.nl
 
 INVERT
 #content-top.form
+
+================================
+
+vanguard.com
+
+CSS
+.hidePageIfJSdisabled {
+    display: block !important;
+}
 
 ================================
 
@@ -7579,10 +8262,10 @@ html[dir] .landing-main > :first-child > :nth-child(2) > :first-child {
     border: 5px solid white !important;
 }
 span[data-icon="tail-in"] {
-    color: rgb(34, 46, 53) !important;
+    color: rgb(30, 36, 39) !important;
 }
 span[data-icon="tail-out"] {
-    color: rgb(5, 71, 64) !important;
+    color: rgb(4, 57, 51) !important;
 }
 
 IGNORE INLINE STYLE
@@ -7793,6 +8476,7 @@ img[alt="The Signpost"]
 img[src$=".svg.png"]
 
 CSS
+.mwe-popups-discreet > svg,
 div .thumbimage[src$=".png"],
 div .thumbimage img[src$=".png"] {
     background-color: white;
@@ -7905,6 +8589,15 @@ IGNORE IMAGE ANALYSIS
 
 ================================
 
+wired.co.uk
+
+INVERT
+body a svg
+.c-nav__open-icon
+.c-nav__close-icon
+
+================================
+
 wired.com
 
 INVERT
@@ -8006,6 +8699,13 @@ html, body {
 #buyerComments {
     color: var(--darkreader-neutral-text) !important;
 }
+
+================================
+
+www.freepascal.org/docs-html
+
+INVERT
+img
 
 ================================
 
@@ -8420,6 +9120,7 @@ html:not(.style-scope) {
     --yt-spec-general-background-a: ${white} !important;
     --yt-spec-general-background-b: ${#f1f1f1} !important;
     --yt-spec-general-background-c: ${#e9e9e9} !important;
+    --yt-spec-brand-icon-active: #{rgb(255, 0, 0)} !important;
 }
 .ytp-hover-progress-light {
     background-color: rgba(255,255,255,.5) !important;
@@ -8493,6 +9194,20 @@ iron-input.paper-input > input.paper-input,
 .input-content.paper-input-container > .paper-input-label {
     color: var(--paper-input-container-shared-input-style_-_color) !important;
 }
+ytd-compact-autoplay-renderer,
+ytd-video-primary-info-renderer,
+#sections.ytd-guide-renderer > .ytd-guide-renderer:not(first-child),
+ytd-video-secondary-info-renderer,
+#placeholder-area.ytd-comment-simplebox-renderer {
+    border-bottom-color: var(--yt-spec-10-percent-layer) !important;
+}
+ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child),
+ytd-metadata-row-header-renderer[has-divider-line] {
+    border-top-color: var(--yt-spec-10-percent-layer) !important;
+}
+ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer {
+    fill: var(--yt-spec-brand-icon-active) !important;
+}
 
 ================================
 
@@ -8510,6 +9225,15 @@ INVERT
 .lake-math-content-preview-img > img
 .lake-math-container > img
 div[data-lake-card="mindmap"] > div > div > div
+
+================================
+
+zadowolenie.pl
+
+CSS
+.m-menu_list {
+    background: var(--darkreader-neutral-background);
+}
 
 ================================
 
@@ -8536,6 +9260,19 @@ li a img
 CSS
 .nr-box-header {
     background-image: none !important;
+}
+
+================================
+
+zenn.dev
+
+CSS
+:root {
+    --c-primary-bg: #393e3f;
+}
+
+#header > div > div > a > svg > g {
+    fill: white !important;
 }
 
 ================================
