@@ -810,6 +810,13 @@ svg text.time_cursor {
 
 ================================
 
+app.getpocket.com
+
+IGNORE IMAGE ANALYSIS
+*
+
+================================
+
 app.grammarly.com
 
 CSS
@@ -850,6 +857,26 @@ CSS
 
 ================================
 
+ars.particify.de
+
+CSS
+body {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.mat-mini-fab {
+    box-shadow: none !important;
+}
+.mat-card {
+    background-color: #{gray} !important;
+    box-shadow: none !important;
+}
+.mat-chip {
+    background-color: var(--darkreader-neutral-background)  !important;
+    color: var(--darkreader-neutral-text) !important;
+}
+
+================================
+
 arstechnica.com
 
 CSS
@@ -883,6 +910,14 @@ asana.com
 
 INVERT
 .DatePickerCalendarDate--today .DatePickerCalendarDate-button::after
+
+================================
+
+asciinema.org
+
+IGNORE INLINE STYLE
+polygon
+polyline
 
 ================================
 
@@ -1278,6 +1313,37 @@ CSS
 .skeleton-image[loaded] .skeleton-image__img {
     mix-blend-mode: normal !important;
 }
+
+================================
+
+book.douban.com
+
+IGNORE IMAGE ANALYSIS
+.bigstar50
+.bigstar45
+.bigstar40
+.bigstar35
+.bigstar30
+.bigstar25
+.bigstar20
+.bigstar15
+.bigstar10
+.bigstar05
+.bigstar00
+.allstar50
+.allstar45
+.allstar40
+.allstar35
+.allstar30
+.allstar25
+.allstar20
+.allstar15
+.allstar10
+.allstar05
+.allstar00
+.rating
+.starb
+.collectors
 
 ================================
 
@@ -2062,6 +2128,16 @@ INVERT
 
 ================================
 
+differencebetween.net
+
+CSS
+body,
+#page-wrapper {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+
+================================
+
 digg.com
 
 CSS
@@ -2275,14 +2351,42 @@ INVERT
 img[src$="google_gsuite"]
 div[role="menuitem"] svg
 
+IGNORE INLINE STYLE
+div[role="presentation"] svg
+
+================================
+
+drive.google.com/file
+
+INVERT
+div[role="menu"] > div[role="menuitem"] > div > div > div
+div[role="menu"] > div[role="menuitem"] > div > div
+
 CSS
 div[role="toolbar"] div[role="button"] > div[class*='-']:not([onclick]):not(:link):not(:visited):not([style*="background-image"]):first-child,
-div[role="toolbar"] div[role="button"] > div[class*='-']:not([onclick]):not(:link):not(:visited) > :nth-child(2) > div {
+div[role="toolbar"] div[role="button"] > div[class*='-']:not([onclick]):not(:link):not(:visited) > :nth-child(2) > div,
+div[style="bottom: 0px;"] > div[style^="opacity:"] div[role="button"] > div:not([onclick]):not(:link):not(:visited),
+div[role="menu"] > div[role="menuitem"] > div > div:not([style*="background-image"]) {
     background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite33.svg') !important;
 }
 
+================================
+
+drive.google.com/picker
+
+INVERT
+div[role="menu"] div[role="menuitem"]:not([class*=" "]) > div > div > div
+div[role="button"][tabindex="0"]
+
+CSS
+div[role="menu"] div[role="menuitem"][class*=" "] > div > div > div,
+div[role="button"][aria-disabled="true"] > div {
+    filter: invert(50%) !important;
+}
+
 IGNORE INLINE STYLE
-div[role="presentation"] svg
+svg[class=""]
+svg[class=""] *
 
 ================================
 
@@ -2757,9 +2861,6 @@ img[src*="%2Fmap"], ._8bb_ img[src*="%2Fmap"],
 img[src*="map.php"], ._8bb_ img[src*="map.php"],
 img[src*="www.traseo.pl%2Froute"], ._8bb_ img[src*="www.traseo.pl%2Froute"] {
     filter: invert(100%) hue-rotate(180deg) !important;
-}
-.q2y6ezfg, .mkbloq8g {
-    background-color: var(--always-white) !important;
 }
 .j7vl6m33 {
     fill: var(--always-white) !important;
@@ -3304,11 +3405,9 @@ CSS
 .markdown-body table tr,
 .markdown-body img,
 .Box--overlay,
-.gh-header,
 .gh-header .gh-header-sticky.is-stuck+.gh-header-shadow,
 .timeline-comment,
 .new-discussion-timeline .composer .comment-form-head.tabnav,
-.discussion-timeline-actions,
 .pagination-loader-container,
 .pagehead-tabs-item.selected,
 .reponav-item.selected,
@@ -3563,6 +3662,15 @@ gnu.org
 INVERT
 #gnu-banner img
 #search-icon
+
+================================
+
+gog-games.com/game
+
+CSS
+.container.game > .bg {
+    background-image: none !important;
+}
 
 ================================
 
@@ -4391,6 +4499,9 @@ CSS
 .monaco-editor, .monaco-editor-background, .monaco-editor .margin {
     background-color: var(--darkreader-neutral-background) !important;
 }
+div#solution img {
+    background-color: ${black};
+}
 
 ================================
 
@@ -4858,6 +4969,31 @@ CSS
 
 ================================
 
+matomo.org
+
+INVERT
+img[alt*="WordPress"]
+img[src*="Mailfence"]
+img[src*="sampling"]
+img[src*="logo"]
+img.mega-menu-logo
+
+CSS
+select, .elementor-text-editor, .elementor-text-editor *,
+.elementor-blockquote *, .elementor-testimonial *,
+.elementor-price-table * {
+    color: var(--darkreader-neutral-text) !important;
+}
+
+.elementor-card-shadow-yes .elementor-post__card:hover {
+    box-shadow: rgb(76 75 75 / 42%) 0px 0px 30px 0px;
+}
+.elementor-card-shadow-yes .elementor-post__card {
+    box-shadow: rgb(0 0 0 / 23%) 0px 0px 10px 0px;
+}
+
+================================
+
 matrix.org
 
 INVERT
@@ -5011,26 +5147,35 @@ CSS
 ._576q div {
   background-color: transparent !important;
 }
-.j7vl6m33 {
+.j7vl6m33, .a8c37x1j, .bp9cbjyn, mask[id*="jsc_c"] > circle {
     fill: var(--always-white) !important;
 }
-
-================================
-
-microsoft.com
-answers.microsoft.com
-
-INVERT
-img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4sQDc"]
-img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pxBu"]
-img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pkvE"]
-img[src*="/static/images/inreplyto.svg"]
-img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pndL"]
-
-CSS
-.c-logo .c-image {
-    background: ${white} !important;
+:root, .__fb-light-mode {
+    --filter-disabled-icon: invert(100%) opacity(30%) !important;
+    --filter-placeholder-icon: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%) !important;
+    --filter-primary-icon: invert(100%) !important;
+    --filter-secondary-icon: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%) !important;
+    --filter-warning-icon: invert(77%) sepia(29%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(128%) hue-rotate(359deg) brightness(102%) contrast(107%) !important;
+    --filter-blue-link-icon: invert(73%) sepia(29%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(103.25%) hue-rotate(189deg) brightness(101%) contrast(101%) !important;
+    --filter-positive: invert(37%) sepia(61%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(115%) hue-rotate(91deg) brightness(97%) contrast(105%) !important;
+    --filter-negative: invert(25%) sepia(33%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(110%) hue-rotate(345deg) brightness(132%) contrast(96%) !important;
 }
+.qbubdy2e {
+    fill: none !important;
+}
+.tdjehn4e, .oo1teu6h {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.tdjehn4e:hover, .ovq5dppa:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+IGNORE INLINE STYLE
+[role="button"] svg
+[role="button"] svg line
+div svg[viewBox="0 0 36 36"] mask path
+mask > rect
+g > rect
 
 ================================
 
@@ -5053,6 +5198,13 @@ body,
 .site-footer {
     background-image: none !important;
 }
+
+================================
+
+miro.com
+
+INVERT
+#pixiCanvasContainer > :nth-child(1)
 
 ================================
 
@@ -5886,6 +6038,18 @@ img[src^="data:image/png;"]
 
 ================================
 
+play.google.com/books/listen
+
+INVERT
+a[href*="books/audiobooks"]
+
+CSS
+.chapter-item:not(.iron-selected) .chapter-title {
+    color: var(--darkreader-neutral-text) !important;
+}
+
+================================
+
 play.google.com/music
 
 INVERT
@@ -6039,6 +6203,19 @@ psemu.pl
 CSS
 .menu-item {
     text-shadow: rgb(40, 43, 54) 0px 1px 0px !important;
+}
+
+================================
+
+psprices.com
+
+INVERT
+.d-inline-block
+#game-price-dynamics
+
+CSS
+body, footer {
+    background: var(--darkreader-neutral-background) !important; 
 }
 
 ================================
@@ -6305,6 +6482,15 @@ CSS
 
 ================================
 
+roblox.com
+
+CSS
+.checkbox input[type=checkbox]:checked + label::before {
+    background-color: var(--darkreader-neutral-text) !important;
+}
+
+================================
+
 ros.org
 
 CSS
@@ -6373,6 +6559,9 @@ div#container-wrap::before {
     top: 0; left: 0;
     width: 100%; height: 162px;
     background-image: url(http://www.scp-wiki.net/local--files/component:theme/body_bg.png) !important;
+}
+.yui-navset .yui-nav a {
+    background-image: none !important;
 }
 
 ================================
@@ -6848,6 +7037,13 @@ CSS
 
 ================================
 
+store.playstation.com
+
+INVERT
+.psw-brand-text--playstation-store
+
+================================
+
 store.ubi.com
 
 INVERT
@@ -6867,6 +7063,7 @@ INVERT
 .weekly-goal svg
 .week.clearfix svg
 .activity-map img
+.group-activity-map img
 img.leaflet-tile-loaded:not([src*="satellite"])
 
 CSS
@@ -6906,6 +7103,7 @@ CSS
 IGNORE IMAGE ANALYSIS
 .app-icon.icon-nav-training
 .app-icon.icon-fb
+.app-icon.icon-rowing
 
 ================================
 
@@ -7078,6 +7276,13 @@ h4, h5, h6 {
 .bg-center {
     background: none !important;
 }
+
+================================
+
+take-a-screenshot.org
+
+INVERT
+.switch-window span::before
 
 ================================
 
@@ -8878,6 +9083,11 @@ a[href="/"] img
 a[href="https://x-kom.pl"] img
 a[href="https://www.x-kom.pl"] img
 img[alt="Menu"]
+
+CSS
+.ePVVIv{
+    filter: brightness(0.8);
+}
 
 ================================
 
