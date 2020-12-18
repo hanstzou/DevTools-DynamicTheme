@@ -569,6 +569,28 @@ CSS
 
 ================================
 
+answers.unity.com
+
+CSS
+header.section-header div.shard:before {
+    background: url(//unity3d.com/profiles/unity3d/themes/unity/images/assets/layout/shard.png) 0 0 no-repeat !important;
+}
+
+================================
+
+api.kde.org
+
+INVERT
+.center
+.image
+
+CSS
+.memdoc, .memproto {
+    background-image: initial !important;
+}
+
+================================
+
 app.datadoghq.com
 
 INVERT
@@ -754,6 +776,20 @@ bbc.com/earth
 INVERT
 .orb-nav-section.orb-nav-blocks
 .orb-icon.orb-icon-arrow
+
+================================
+
+bfi.org.uk
+
+INVERT
+img[src$="bfi_logo_transp.png"]
+img[src$="national-lottery-logo-color.png"]
+img[src*="sight-and-sound-logo-280x69.png"]
+
+CSS
+body {
+    background-image: none !important;
+}
 
 ================================
 
@@ -1043,6 +1079,16 @@ INVERT
 
 ================================
 
+confluence.*
+
+CSS
+.geDiagramContainer rect,
+.geDiagramContainer path {
+    filter: brightness(60%);
+}
+
+================================
+
 cookiepedia.co.uk
 
 INVERT
@@ -1276,6 +1322,20 @@ CSS
 
 ================================
 
+discord.com
+
+CSS
+nav[aria-label="Servers sidebar"] foreignObject {
+    mask: none !important;
+    border-radius: 100% !important;
+    transition: all .5s;
+}
+nav[aria-label="Servers sidebar"] foreignObject:hover {
+    border-radius: 30% !important;                                                                                                                                                                                                                                       
+}
+
+================================
+
 dnslytics.com
 
 INVERT
@@ -1347,6 +1407,18 @@ CSS
 
 ================================
 
+downloads.khinsider.com
+
+CSS
+body {
+    background: none !important;    
+}
+#faux {
+    background-image: none !important;    
+}
+
+================================
+
 drive.google.com
 
 INVERT
@@ -1356,6 +1428,9 @@ CSS
 .ndfHFb-c4YZDc.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Bz112c:not([onclick]):not(:link):not(:visited) {
     background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite26.svg') !important;
 }
+
+IGNORE INLINE STYLE
+div[role="presentation"] svg
 
 ================================
 
@@ -1720,6 +1795,9 @@ img[src*="map"], [style*="map"],
 .sp_zT9aHJDYI11 {
     background-image: url(/rsrc.php/v3/yB/r/99Zvs7cEY2d.png) !important;
 }
+.sp_58eJ3V9_er3 {
+    background-image: url(/rsrc.php/v3/yd/r/jUiHkRoni5c.png) !important;
+}
 
 IGNORE INLINE STYLE
 [role="button"] svg
@@ -1883,6 +1961,20 @@ INVERT
 
 ================================
 
+fontspring.com
+
+INVERT
+.grid6 .fullwidth
+
+================================
+
+fontsquirrel.com
+
+INVERT
+.fontlistitem
+
+================================
+
 foobar2000.org
 
 INVERT
@@ -1904,6 +1996,13 @@ forums.tomshardware.com
 INVERT
 img[src="/styles/tomshardware/tomshardware/toms-hardware-logo.png"]
 div.trophyShowcase.trophyShowcase--postbit
+
+================================
+
+forvo.com
+
+INVERT
+img[src$="layout/logo.svg"]
 
 ================================
 
@@ -1932,7 +2031,7 @@ skinflint.co.uk
 cenowarka.pl
 
 CSS
-img.listview__image, img.galleryview__image {
+img.listview__image, img.galleryview__image, .variant__header__dropdown__item__icon img  {
     mix-blend-mode: normal !important;
 }
 
@@ -2192,6 +2291,10 @@ CSS
     color: rgb(24, 26, 27) !important;
 }
 
+label, h5, h6, header, .h5 {
+    color: ${black};
+}
+
 ================================
 
 gsuite.google.com
@@ -2255,6 +2358,17 @@ CSS
 html {
     text-shadow: none !important;
 }
+
+================================
+
+hindustantimes.com
+
+INVERT
+.menu.noti-dot
+.searchHolder .search
+img[src$="logo-big-cm.png"]
+img[src$="logo-ht.png"]
+img[src$="htlogo.png"]
 
 ================================
 
@@ -2343,6 +2457,15 @@ CSS
 #wrapper {
     background: ${#e3e2dd} !important;
 }
+
+================================
+
+infinitysearch.co
+
+INVERT
+img[src$="github.ico"]
+img[src$="unsplash.png"]
+img[src$="boardreader.ico"]
 
 ================================
 
@@ -2787,6 +2910,18 @@ INVERT
 
 ================================
 
+magic.freizeitspieler.de
+
+INVERT
+img[src="pics/MtG-Freizeitspieler.gif"]
+
+CSS
+body {
+    background-image: none !important
+}
+
+================================
+
 mail.google.com
 
 INVERT
@@ -3046,6 +3181,17 @@ body {
 
 ================================
 
+mixcloud.com
+
+INVERT
+.cQABPj
+
+IGNORE INLINE STYLE
+path[fill="none"]
+path[fill-rule="evenodd"]
+
+================================
+
 mobiel.nl
 
 INVERT
@@ -3129,6 +3275,18 @@ CSS
 
 ================================
 
+mozilla.org
+
+INVERT
+img.sidebar-icon
+
+CSS
+div.mzp-c-navigation-logo {
+    background: ${black} !important;
+}
+
+================================
+
 msmgtoolkit.in
 
 CSS
@@ -3153,8 +3311,10 @@ CSS
 my.nextdns.io
 
 INVERT
-img[src="/static/media/logo-large@2x.ac61cadf.png"]
-img[src^="data:image/png;"]
+img[src*="/static/media/logo-large"]
+img[src*="/static/media/samsung"]
+img[src*="/static/media/sonos"]
+a.d-none.d-md-inline
 
 ================================
 
@@ -3724,6 +3884,15 @@ producthunt.com
 
 INVERT
 [class="icon_f5f81"]
+
+================================
+
+prostovpn.org
+
+CSS
+body {
+    background: none !important;
+}
 
 ================================
 
@@ -4966,6 +5135,29 @@ CSS
 
 ================================
 
+urbandictionary.com
+
+INVERT
+g.c3-axis.c3-axis-x g.tick text
+.top-bar-section .has-dropdown > a::after
+
+CSS
+.def-panel .ribbon {
+    background-color: #EFFF00 !important;
+    color: #333 !important;
+}
+.def-panel {
+    border-width: medium !important;
+}
+.panel {
+    border-width: medium !important;
+}
+.search-and-actions .main-search input {
+    border-width: medium !important;
+}
+
+================================
+
 usbmobilemonitor.com
 
 CSS
@@ -5066,6 +5258,15 @@ w3.org
 INVERT
 img[alt~="equation"]
 img[alt~="Equation"]
+
+================================
+
+wakamaifondue.com
+
+CSS
+.upload-button > strong, .upload-button > span {
+    color: ${white} !important;
+}
 
 ================================
 
@@ -5318,6 +5519,7 @@ INVERT
 .main-footer-menuToggle
 div.post-content.footer-content > h2 > img
 img[src*="Loudspeaker.svg"]
+img[alt="The Signpost"]
 img[src$=".svg.png"]
 
 CSS
