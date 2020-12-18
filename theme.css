@@ -4,6 +4,7 @@ INVERT
 img.editor-inline-macro:not(.with-chrome)
 table.wysiwyg-macro::after
 .jfk-bubble.gtx-bubble
+.captcheck_answer_label > input + img
 
 CSS
 body {
@@ -188,6 +189,9 @@ body {
 }
 .jfk-bubble, .octotree-sidebar, .cc-pr__logo, .cc-octicon, #network canvas, img.network-tree {
     filter: invert(94.4%) hue-rotate(180deg) contrast(90%) !important;
+}
+:root {
+    --color-previewable-comment-form-bg: var(--darkreader-neutral-background) !important;
 }
 div.octocat-spinner,
 img.js-loading-spinner,
@@ -629,7 +633,7 @@ INVERT
 ================================
 
 amazon.*
-amazon.co.uk
+amazon.*.*
 
 INVERT
 #banner-image
@@ -647,8 +651,37 @@ CSS
     background-color: ${white} !important;
 }
 
+div.milestone.notReached .milestone-marker::before {
+    border-color: var(--darkreader-neutral-text);
+}
+
+span.milestone-bar {
+    z-index: 0;
+}
+
+span.milestone-bar_foreground {
+    background-color: #4DC2B4;
+}
+
+span.milestone-bar_background {
+    background-image: linear-gradient(var(--darkreader-neutral-text) 40%, #181a1b00 0px);
+}
+
 img {
     border-radius: 5% !important;
+}
+
+================================
+
+amazon.cn
+
+INVERT
+#nav-logo
+
+CSS
+#nav-main,
+.nav-search-scope {
+    background-image: none !important;
 }
 
 ================================
@@ -710,6 +743,15 @@ INVERT
 CSS
 .memdoc, .memproto {
     background-image: initial !important;
+}
+
+================================
+
+app.codesignal.com
+
+CSS
+.monaco-editor .cursor {
+   background-color: var(--darkreader-selection-text) !important;
 }
 
 ================================
@@ -778,6 +820,14 @@ CSS
 .article-single figure img {
     mix-blend-mode: initial !important;
 }
+
+================================
+
+artofproblemsolving.com
+
+INVERT
+.latex
+.latexcenter
 
 ================================
 
@@ -956,6 +1006,18 @@ body {
 
 ================================
 
+beta.protonmail.com
+
+CSS
+.label-stack-item-button {
+    background-color: var(--color,currentColor) !important;
+}
+.items-column-list-inner {
+    border: solid var(--bordercolor-input) !important;
+}
+
+================================
+
 bfi.org.uk
 
 INVERT
@@ -1023,6 +1085,14 @@ bitbucket.org
 INVERT
 a[href="/product"]
 .registration-hero .form-prompt
+
+CSS
+span[label="Comment"] > span {
+    color: var(--darkreader-neutral-text) !important;
+}
+span.code {
+    background-color: rgba(255, 247, 218, 0.08) !important;
+}
 
 ================================
 
@@ -1230,6 +1300,14 @@ div[role="checkbox"]
 
 ================================
 
+calibre-ebook.com
+
+IGNORE IMAGE ANALYSIS
+.tooltip
+#content-wrapper
+
+================================
+
 carmax.com
 
 CSS
@@ -1295,6 +1373,18 @@ CSS
 body {
     background-image: none !important;
     background-color: var(--darkreader-neutral-background) !important;
+}
+
+================================
+
+chinadigitaltimes.net
+
+INVERT
+.show-menu-button span
+
+CSS
+#main-header-wrapper {
+    background-image: none !important;
 }
 
 ================================
@@ -1710,6 +1800,9 @@ INVERT
 .dkt_logo
 .benefit-icon
 
+IGNORE IMAGE ANALYSIS
+*
+
 ================================
 
 deccanchronicle.com
@@ -1742,6 +1835,15 @@ body {
 
 ================================
 
+deezer.com
+
+CSS
+.slider-track .gradient-default {
+    background-image: linear-gradient(1deg, var(--color-dark-grey-800) 13%, var(--color-white));
+}
+
+================================
+
 dennisbareis.com
 
 CSS
@@ -1762,6 +1864,13 @@ designobserver.com
 
 INVERT
 .dologo
+
+================================
+
+desmos.com
+
+INVERT
+.dcg-grapher
 
 ================================
 
@@ -1862,7 +1971,25 @@ path[class^="wavePath"] {
 
 ================================
 
+discover.manjaro.org
+
+CSS
+html, body {
+    background-image: url("/static/images/tux.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom 0 left -12px !important;
+    background-size: 60px !important;
+    background-attachment: fixed !important;
+    background-color: var(--darkreader-neutral-background) !important;
+}
+
+IGNORE IMAGE ANALYSIS
+body
+
+================================
+
 ditu.baidu.com
+map.baidu.com
 
 INVERT
 .BMap_contextMenu
@@ -1936,7 +2063,8 @@ img[src$="googlelogo_dark_clr_74x24px.svg"]
 .exportUnderline
 .freebirdMaterialIconIconEl
 .quantumWizTogglePapercheckboxCheckMark
-.docs-gm #docs-titlebar-share-client-button .jfk-button .scb-button-icon:not([class*="white"])
+#docs-titlebar-share-client-button .scb-button-icon:not([class*="white"])
+body[itemtype*="PresentationObject"] #docs-titlebar-share-client-button .scb-button-icon
 
 CSS
 .docs-preview-palette-item {
@@ -1970,17 +2098,16 @@ CSS
 
 ================================
 
+dotaunderlords.gamepedia.com
 dota2.gamepedia.com
 
 CSS
-div.vectorTabs li:not(.selected) span,
-div.vectorMenu,
-#p-search {
-    background-color: var(--darkreader-neutral-background) !important
-}
 #right-navigation {
     background-image: none !important;
 }
+
+IGNORE IMAGE ANALYSIS
+#left-navigation
 
 ================================
 
@@ -2028,6 +2155,14 @@ dropbox.com
 
 INVERT
 .dl-dropbox
+.drops-empty-page-header-image
+.restorations-education__df-help__image
+.search__view--empty img
+.plan-status-section__icon img
+
+IGNORE INLINE STYLE
+.home__suggest_image path
+.selection-preview-pane__icon path
 
 ================================
 
@@ -2106,6 +2241,16 @@ education.github.com
 INVERT
 img[alt="GitHub Education"]
 .octicon-logo-github
+
+================================
+
+eff.org
+
+CSS
+select > optgroup,
+select > optgroup > option {
+    background-color: var(--darkreader-neutral-background) !important;
+}
 
 ================================
 
@@ -2507,7 +2652,7 @@ terrytao.wordpress.com
 wolframalpha.com
 
 INVERT
-img
+img:not([src^="/_next/static/images/"])
 
 ================================
 
@@ -2628,8 +2773,6 @@ INVERT
 .detail-data-panel__icon
 .sleep-chart-yaxis.end
 .supergraph-canvas
-.leaflet-pane.leaflet-map-pane img:not([src*="satellite"])
-.mapboxgl-canvas
 .zone1desc
 
 CSS
@@ -2639,6 +2782,11 @@ CSS
 .card__item-icon--rounded img {
     background-color: rgba(255, 255, 255, 0.15) !important;
     background-blend-mode: color;
+}
+.altitudetitle, .altdescmax, .altdescmin, 
+.zonedesctitle, .zonedescmax, .zonedesclight, 
+.maxhighlightval, .maxhighlightname {
+    color: rgb(0, 0, 0) !important;
 }
 .zone1desc {
     color: ${#ffffff} !important;
@@ -2703,6 +2851,30 @@ forum.miranda-ng.org
 CSS
 .firstlevel {
     color: ${#666666} !important;
+}
+
+================================
+
+forum.p300.it
+
+CSS
+.ipsReact_reactCount > a {
+    background-color: var(--darkreader-neutral-background);
+    border-color: var(--darkreader-neutral-text); !important;
+}
+
+.ipsType_normal {
+    border-color: rgb(48,52,54);
+}
+
+.ipsMenu_headerBar,
+.ipsMenu_footerBar,
+.ipsEmoticons_category,
+.ipsMenu_innerContent,
+ul.ipsMenu, .ipsMenu > ul,
+a[data-mentionid],
+.cUserHovercard {
+    background-color: var(--darkreader-neutral-background) !important;
 }
 
 ================================
@@ -2784,6 +2956,18 @@ INVERT
 .menuImg
 .buttonContent.stylebarButton
 .EuclidianPanel > canvas
+
+================================
+
+get.google.*
+get.google.*.*
+
+INVERT
+a[href*="about/products"]
+span[aria-label="Settings"][role="menuitem"] path
+span[aria-label="About Album Archive"][role="menuitem"] path
+span[aria-label="Download photo"][role="menuitem"] path
+span[aria-label="Manage in Google Photos"][role="menuitem"] path
 
 ================================
 
@@ -2920,6 +3104,9 @@ CSS
 }
 #commit-activity-detail > svg {
     fill: ${black} !important;
+}
+:root {
+    --color-previewable-comment-form-bg: var(--darkreader-neutral-background) !important;
 }
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
@@ -3326,6 +3513,7 @@ INVERT
 img[src$="github.ico"]
 img[src$="unsplash.png"]
 img[src$="boardreader.ico"]
+#black_logo
 
 ================================
 
@@ -3733,6 +3921,7 @@ CSS
 }
 
 IGNORE IMAGE ANALYSIS
+.masthead-logo-loading
 .masthead-logo
 
 ================================
@@ -3933,6 +4122,13 @@ td.c {
 
 ================================
 
+login.live.com
+
+INVERT
+div[id$="Proofs"] .tile-img
+
+================================
+
 login.yahoo.com
 
 INVERT
@@ -3958,6 +4154,18 @@ m.dianping.com
 INVERT
 .flash-screen
 .header-download-img
+
+================================
+
+m.slashdot.org
+
+CSS
+.slashbar,
+.story-prop,
+#discussion,
+#filler {
+    background-image: none !important;
+}
 
 ================================
 
@@ -4063,19 +4271,6 @@ CSS
 
 ================================
 
-map.baidu.com
-
-INVERT
-#MapHolder > canvas
-#map-operate > :nth-child(2)
-
-CSS
-#map-operate > :nth-child(2) > button {
-    background-color: white !important;
-}
-
-================================
-
 mapa-turystyczna.pl
 
 INVERT
@@ -4146,6 +4341,38 @@ INVERT
 
 ================================
 
+mathsisfun.com
+
+CSS
+#searchFld {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-color: black !important;
+}
+
+#searchBtn {
+    border-color: black !important;
+    background-color: var(--darkreader-neutral-background) !important;                                                                                                       
+}
+
+#content h1 {
+    color: var(--darkreader-neutral-text) !important;
+}
+
+#hdr {
+    opacity: 0.2;
+}
+
+#menuWide li{
+    background-color: rgb(64, 99, 255) !important;
+    color: white !important;
+}
+
+#menuWide li:hover {
+    background-color: rgb(18, 35, 112) !important;
+}
+
+================================
+
 matrix.org
 
 INVERT
@@ -4211,6 +4438,13 @@ CSS
 span.markup--quote.markup--p-quote.is-other {
     background-image: linear-gradient(rgba(14, 255, 167, 0.2), rgba(14, 255, 167, 0.2)) !important;
 }
+
+================================
+
+meet.google.com
+
+IGNORE INLINE STYLE
+svg[preserveAspectRatio*="meet"] *
 
 ================================
 
@@ -4320,6 +4554,19 @@ midkar.com
 CSS
 body {
     background-image: unset !important;
+}
+
+================================
+
+miktex.org
+
+INVERT
+.icon-bar
+
+CSS
+body,
+.site-footer {
+    background-image: none !important;
 }
 
 ================================
@@ -4459,6 +4706,14 @@ div.mzp-c-navigation-logo {
 
 ================================
 
+mp.weixin.qq.com
+
+INVERT
+.audio_card_progress
+.audio_card_progress_handle
+
+================================
+
 msmgtoolkit.in
 
 CSS
@@ -4467,6 +4722,15 @@ CSS
 }
 .cid-r89gzwx5mR .mbr-section-subtitle {
     color: ${white};
+}
+
+================================
+
+msys2.org
+
+CSS
+body {
+    background-image: none !important;
 }
 
 ================================
@@ -4697,6 +4961,13 @@ CSS
 
 ================================
 
+numpy.org
+
+INVERT
+.math
+
+================================
+
 nvidia.com
 nvidia.in
 
@@ -4768,7 +5039,8 @@ CSS
 olx.pl
 
 IGNORE IMAGE ANALYSIS
-.cat-icon
+.cat-icon-628
+.cat-icon-87
 
 ================================
 
@@ -4956,10 +5228,12 @@ INVERT
 
 ================================
 
-orf.at/corona/stories/daten
+orf.at/corona/*
 
 INVERT
 .bg
+.annotation
+.sparkline--fill
 
 ================================
 
@@ -4997,6 +5271,13 @@ body {
 
 ================================
 
+pcpartpicker.com
+
+IGNORE INLINE STYLE
+.price-history-legend-color
+
+================================
+
 peardeck.com
 
 INVERT
@@ -5020,6 +5301,15 @@ CSS
 .score-card tr td.birdie {
     background-image: initial;
     background-color: rgb(1, 76, 181);
+}
+
+================================
+
+play.golang.org
+
+CSS
+#wrap {
+    background-color: var(--darkreader-neutral-background) !important;
 }
 
 ================================
@@ -5105,12 +5395,11 @@ praca.pl
 
 INVERT
 img[alt="Praca.pl"]
+.listing__logo
+.app-offer__logo-img
+.company__img
 
 CSS
-.listing__logo {
-    background-color: rgba(255, 255, 255, 0.20);
-    background-blend-mode: color;
-}
 .app-offer__content {
     background-color: rgb(25, 26, 27) !important;
 }
@@ -5118,6 +5407,9 @@ CSS
 .szcont .f1template_content {
     background-color: rgba(0, 0, 0, 0.25) !important;
     background-blend-mode: color;
+}
+.company__img {
+    padding: 0 0 !important;
 }
 
 IGNORE IMAGE ANALYSIS
@@ -5147,6 +5439,15 @@ INVERT
 
 ================================
 
+procyclingstats.com
+
+IGNORE IMAGE ANALYSIS
+.flag
+.flag.w32
+.flag.c16
+
+================================
+
 producthunt.com
 
 INVERT
@@ -5168,6 +5469,15 @@ prostovpn.org
 CSS
 body {
     background: none !important;
+}
+
+================================
+
+psemu.pl
+
+CSS
+.menu-item {
+    text-shadow: rgb(40, 43, 54) 0px 1px 0px !important;
 }
 
 ================================
@@ -5500,6 +5810,15 @@ div#container-wrap::before {
 
 ================================
 
+scratch-wiki.info
+
+INVERT
+.sb3-comment-label
+.sb3-literal-string
+.sb3-literal-number
+
+================================
+
 scratch.mit.edu/projects/editor
 
 CSS
@@ -5716,6 +6035,17 @@ INVERT
 .solution-cell img
 .solution-content img
 .answer img
+
+================================
+
+slashnet.wordpress.com
+
+CSS
+#container,
+.entry,
+body {
+    background-image: none !important;
+}
 
 ================================
 
@@ -6356,6 +6686,147 @@ h1.site-logo
 
 ================================
 
+thingiverse.com
+
+CSS
+a.dashboard_button,
+a.plain-link,
+a.white-button,
+a[class^="SideMenuItem__textWrapper-"],
+a[class^="ThingComment__createdBy-"],
+a[class^="ThingComment__modelName-"],
+a[class^="UserProfileBody__location"],
+a[class^="UserProfileBody__name-"],
+button[class^="CollectThingWindow__buttonWrapper-"],
+button[class^="UserFilter__dropdownButton-"],
+div.basic-page h1,
+div.basic-page h2,
+div.basic-page h3,
+div.basic-page h4,
+div.basic-page select,
+div.center_content .value p,
+div.center_content h1,
+div.center_content h2,
+div.content-box,
+div.copyright,
+div.developer-page,
+div.edit-page h1,
+div.fields label,
+div.file-upload,
+div.file-upload .upload-info strong,
+div.group-contentbox,
+div.group-contentbox a,
+div.half p,
+div.markdown-preview,
+div.pre-filled,
+div.profile_view p,
+div.profile_view strong,
+div.site-footer a,
+div.sourcelist strong,
+div.submit-buttons .text-link,
+div.thing-components-list h5,
+div.thing-components-list,
+div.top_content,
+div.user-about,
+div.user-fullname,
+div.user-stats a,
+div[class^="CardActionItem__countWrapper-"],
+div[class^="CardActionItem__textWrapper-"],
+div[class^="CategoryItem__dataWrapper-"] span,
+div[class^="Contents__widgetTitle-"],
+div[class^="FilterBySort__checkboxLabel-"],
+div[class^="FilterBySort__dropdownContent-"],
+div[class^="FilterBySort__resetFilter-"],
+div[class^="Filters__container-"],
+div[class^="LegalLinks__copyRight-"],
+div[class^="LegalLinks__legalLinks-"],
+div[class^="License__licenseHeader-"],
+div[class^="License__licenseText-"],
+div[class^="MetricButton__metric-"],
+div[class^="MetricButton__tabTitle-"],
+div[class^="Sort__sortContent-"],
+div[class^="sourcelist apps-list"],
+div[class^="Tags__blockTitle-"],
+div[class^="ThingCardHeader__cardCreatedAfter-"],
+div[class^="ThingComment__commentBody-"],
+div[class^="ThingComment__postCommentHeader-"],
+div[class^="ThingFile__fileDescription-"],
+div[class^="ThingFile__fileName-"],
+div[class^="ThingFilePolicy__byDownload-"],
+div[class^="ThingFilePolicy__thingLicense-"],
+div[class^="ThingFilesListHeader__fileName-"],
+div[class^="ThingPage__blockTitle-"],
+div[class^="ThingPage__createdBy-"],
+div[class^="ThingPage__description-"],
+div[class^="ThingPage__description-"] p,
+div[class^="ThingPage__modelName-"],
+div[class^="UserAboutWidget__aboutWrapper-"] p,
+div[class^="UserAboutWidget__skillLevelWrapper-"] p,
+div[class^="UserAboutWidget__tools-"] span,
+div[class^="UserAboutWidget__typesWrapper-"] p,
+div[class^="UserCardBody__fullNameWrapper-"] a,
+div[class^="UserCardBody__usernameWrapper-"] a,
+div[class^="UserFilter__filterContent-"],
+div[class^="UserSort__sortContent-"],
+h2.sso-callout span,
+header.sso-header,
+label,
+label.mktoLabel,
+nav.plain-nav a,
+nav.plain-section-nav a,
+p[class^="SignUp__textFooter-"],
+p[class^="SignUp__textHeader-"],
+p[class^="ThingPage__description-"],
+p[class^="UserEmptyPage__message-"],
+select.select-menu,
+select[class^="FilterBySort__selectWrapper-"],
+span.cancel-icon::before,
+span.dashboard_button,
+span.remove-item::after,
+span.search-icon::before,
+span[class^="CategorySort__dropdownTitle-"],
+span[class^="FilterBySort__dropdownTitle-"],
+span[class^="FilterBySort__eduDropdownTitle-"],
+span[class^="ProfileActionItem__count-"],
+span[class^="ProfileActionItem__label-"],
+span[class^="RemixedFromSection__title-"],
+span[class^="Sort__titleDropdown-"],
+span[class^="ThingCardHeader__cardNameWrapper-"],
+span[class^="ThingFile__extention-"],
+span[class^="ThingsMoreSection__showMoreHeading-"],
+span[class^="UserAboutWidget__widgetTitle-"],
+span[class^="UserFilter__titleDropdown-"],
+span[class^="UserSort__titleDropdown-"],
+table.toggle_table {
+  color: var(--darkreader-neutral-text) !important;
+}
+
+div[class^="FilterBySort__resetFilter-"],
+div[class^="Radio__innerCircle-"],
+div[class^="Radio__outerCircle-"],
+select[class^="FilterBySort__selectWrapper-"],
+span[class^="Checkbox__checkboxCustom-"] {
+  border-color: var(--darkreader-neutral-text) !important;
+}
+
+a.dashboard_button::before,
+div.center_content > img,
+div.site-logo,
+div[class^="CardActionItem__imageWrapper"] > img,
+div[class^="Dropdown__dropdown-"] > button::after,
+div[class^="FilterBySort__dropdown-"] > button::after,
+div[class^="SearchInput__searchIcon-"] > img,
+div[class^="SideMenuItem__itemIconWrapper-"] > img,
+div[class^="SideMenuItem__linkWrapper-"],
+header.sso-header img,
+span.cancel-icon::before,
+span.dashboard_button::before,
+span.search-icon::before {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(6261%) hue-rotate(171deg) brightness(110%) contrast(80%);
+}
+
+================================
+
 thronemaster.net
 
 INVERT
@@ -6472,6 +6943,11 @@ INVERT
 .ita-hwt-enter-img
 .ita-hwt-grip
 .gt-ex-quote
+
+CSS
+.trans-verified-button {
+    background-size: cover;
+}
 
 IGNORE IMAGE ANALYSIS
 .copybutton .jfk-button-img
@@ -6638,10 +7114,23 @@ INVERT
 .infoBox > .title:before
 
 CSS
+#logo a {
+    background: url("../../../g/if/v3/framework/tweakers_logo_v2_x1.png") no-repeat center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    #logo a {
+        background: url("../../../g/if/v3/framework/menu_icons_responsive_v6_x2.png") !important;
+        background-size: 220px 352px !important;
+        background-position: -8px -220px !important;
+    }
+}
+
 .ankeiler > a.commentCount {
     background-image: url(../../../g/icons/commentcounter_small_bg.svg) !important;
     text-decoration: none !important;
 }
+
 .thumb.category {
     border: none !important;
 }
@@ -6665,11 +7154,6 @@ a.showMoreItems {
     border: 6px solid #333 !important;
 }
 
-#logo a {
-    background: url("https://tweakers.net/g/if/v3/framework/tweakers_logo_v2_x1.png") no-repeat center !important;
-    background-color: initial;
-}
-
 #userbar li.icon.flag.nl::after {
     border-top: 3px solid #e7184c !important;
     background-color: #fff !important;
@@ -6684,6 +7168,18 @@ a.showMoreItems {
 
 #userbar li.icon a {
     background: url("https://tweakers.net/g/if/v3/framework/menu_icons_v2.png") no-repeat !important;
+}
+
+#userbar li.display a {
+    background-position: 0 -128px !important
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    #userbar li.icon a {
+        background: url("../../../g/if/v3/framework/menu_icons_responsive_v6_x2.png") !important;
+        background-size: 220px 352px !important;
+        background-position: 0 -264px !important;
+    }
 }
 
 #userbar li.tracker a {
@@ -6712,10 +7208,6 @@ a.showMoreItems {
 
 #userbar li.notifications.selected a {
     background-position: -24px -24px !important;
-}
-
-#userbar li.display a {
-    background-position: 0 -128px !important
 }
 
 #userbar li.display.selected a {
@@ -7092,12 +7584,6 @@ span[data-icon="tail-in"] {
 span[data-icon="tail-out"] {
     color: rgb(5, 71, 64) !important;
 }
-.message-in span > div[style="opacity: 1;"] {
-    background: transparent !important;
-}
-.message-out span > div[style="opacity: 1;"] {
-    background: transparent !important;
-}
 
 IGNORE INLINE STYLE
 path[fill="currentColor"]
@@ -7148,6 +7634,13 @@ INVERT
 .illustration
 .archive-image
 .logo
+
+================================
+
+who.int
+
+INVERT
+.background-url-holder > picture > img
 
 ================================
 
@@ -7343,6 +7836,13 @@ IGNORE INLINE STYLE
 
 ================================
 
+wikisource.org
+
+INVERT
+.mwe-math-element
+
+================================
+
 wikiversity.org
 
 INVERT
@@ -7368,6 +7868,40 @@ CSS
 div.NavFrame div.NavHead {
     background-image: none !important;
 }
+
+================================
+
+windows.php.net
+
+CSS
+#content-columns .block,
+#page-area .content {
+    background-image: none !important;
+}
+#content-columns .block .corners-top, 
+#content-columns .block .corners-bottom, 
+#page-area .content .corners-top,
+#page-area .content .corners-bottom {
+   filter: invert(91%) !important;
+}
+
+IGNORE IMAGE ANALYSIS
+#content-columns .block .corners-top
+#content-columns .block .corners-bottom
+#page-area .content .corners-top
+#page-area .content .corners-bottom
+#content-columns .block .corners-top span
+#content-columns .block .corners-bottom span
+#page-area .content .corners-top span
+#page-area .content .corners-bottom span
+#main-column .innerbox .corners-top
+#main-column .innerbox .corners-bottom
+#mid-column .innerbox .corners-top
+#mid-column .innerbox .corners-bottom
+#main-column .innerbox .corners-top span
+#main-column .innerbox .corners-bottom span
+#mid-column .innerbox .corners-top span
+#mid-column .innerbox .corners-bottom span
 
 ================================
 
@@ -7421,6 +7955,28 @@ span.postdetails span.name a {
 IGNORE INLINE STYLE
 .cevapButton
 span.name a
+
+================================
+
+wuffs.org
+
+CSS
+.heavyShower {
+    background-color: ${#e4b849} !important;
+}
+.lightShower {
+    background-color: ${#ff9} !important;
+}
+.wday-0, .wday-6 {
+    background: ${#ccc} !important;
+}
+.wday-0 .mWeekday,
+.wday-6 .mWeekday {
+    color: ${#000059} !important;
+}
+select:focus {
+    color: var(--darkreader-selection-text) !important;
+}
 
 ================================
 
@@ -7690,6 +8246,9 @@ html[hide-scrollbar] ::-webkit-scrollbar {
 #like-bar {
     background-color: ${rgb(144, 144, 144)} !important;
 }
+#search-icon-legacy.ytd-searchbox {
+    border: 1px solid var(--ytd-searchbox-legacy-border-color) !important;
+}
 yt-formatted-string.ytd-video-primary-info-renderer {
     color: ${black} !important;
 }
@@ -7862,6 +8421,12 @@ html:not(.style-scope) {
     --yt-spec-general-background-b: ${#f1f1f1} !important;
     --yt-spec-general-background-c: ${#e9e9e9} !important;
 }
+.ytp-hover-progress-light {
+    background-color: rgba(255,255,255,.5) !important;
+}
+.ytp-progress-list {
+    background-color: rgba(255,255,255,.2) !important;
+}
 .ytp-volume-slider-handle {
     background-color: white !important;
 }
@@ -7871,7 +8436,7 @@ html:not(.style-scope) {
 .ytp-volume-slider-handle::after {
     background-color: rgba(255,255,255,.2) !important;
 }
-button[aria-label*="like this video along with"][aria-pressed="true"] > yt-icon {
+button[aria-pressed="true"] > yt-icon {
     fill: var(--yt-spec-call-to-action) !important;
     color: var(--yt-spec-call-to-action) !important;
 }
@@ -7913,6 +8478,20 @@ paper-button.ytd-subscribe-button-renderer[subscribed] {
 }
 .ytp-load-progress {
     background: rgba(255,255,255,0.3) !important;
+}
+yt-chip-cloud-chip-renderer {
+    background-color: rgba(255,255,255,0.05) !important;
+}
+yt-chip-cloud-chip-renderer.iron-selected {
+    background-color: rgba(255,255,255,0.2) !important;
+}
+paper-item[aria-selected="true"] {
+    background-color: rgba(255,255,255,0.2) !important;
+}
+iron-input.paper-input > input.paper-input,
+.input-content.paper-input-container > label, 
+.input-content.paper-input-container > .paper-input-label {
+    color: var(--paper-input-container-shared-input-style_-_color) !important;
 }
 
 ================================
