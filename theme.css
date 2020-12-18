@@ -4,6 +4,7 @@ INVERT
 img.editor-inline-macro:not(.with-chrome)
 table.wysiwyg-macro::after
 .jfk-bubble
+embed[type="application/pdf"]
 
 CSS
 body {
@@ -189,6 +190,12 @@ body {
 .jfk-bubble, .octotree-sidebar, .cc-pr__logo, .cc-octicon, #network canvas, img.network-tree {
     filter: invert(94.4%) hue-rotate(180deg) contrast(90%) !important;
 }
+.progress-bar {
+    background-color: rgba(196, 191, 183, 0.25) !important;
+}
+.progress{
+    background-color: green !important; 
+}
 div.octocat-spinner,
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
@@ -346,6 +353,7 @@ INVERT
 .h-auto[alt="Unix & Linux"]
 .h-auto[alt="Web Applications"]
 a.js-gps-track::before
+img[alt="The Stack Exchange Network"]
 
 CSS
 body {
@@ -461,14 +469,20 @@ CSS
 ================================
 
 amazon.com
+amazon.co.uk
 
 INVERT
 #banner-image
+#ordersContainer .a-box.order-attributes img
 
 CSS
 .banner-border {
     background-image: none !important;
     background-color: ${white} !important;
+}
+
+img {
+    border-radius: 5% !important;
 }
 
 ================================
@@ -778,6 +792,21 @@ input
 
 ================================
 
+code.visualstudio.com
+
+CSS
+.home.linux .jumbotron .screenshot {
+ background-image:url("/assets/home/home-screenshot-linux.png");
+ padding-bottom:82.65802%
+}
+@media only screen and (min-width: 1200px) {
+ .home.linux .jumbotron .screenshot {
+  background-image:url("/assets/home/home-screenshot-linux-lg.png");
+  padding-bottom:68%
+ }
+
+================================
+
 codecademy.com
 
 INVERT
@@ -922,6 +951,20 @@ INVERT
 
 ================================
 
+dev.to
+
+INVERT
+img[src$=".svg"]
+
+CSS
+body, h1, h2, h3,
+h4, h5, h6, a,
+.content-classification-text {
+    color: #e8e6e3 !important;
+}
+
+================================
+
 developer.mozilla.org
 
 INVERT
@@ -1002,10 +1045,11 @@ CSS
 ================================
 
 dot.kde.org
+forum.kde.org
 
 CSS
 body {
-    background: ${white};
+    background: rgb(27,29,30);
 }
 
 ================================
@@ -1194,9 +1238,9 @@ INVERT
 #pagelet_ego_pane button .img._3-8_
 #homepage_panel_promote_footer_pagelet button .img._3-8_
 #event_tabs #reaction_units span img
-.fbAggregatedMap
 .fbPlaceFlyoutWrap img
-#PagesProfileHomeSecondaryColumnPagelet img[src*="map"]
+img[src*="map"]
+[style*="map"]
 
 CSS
 .fbNubButton {
@@ -1252,6 +1296,75 @@ CSS
 }
 #goodwill_throwback_permalink_header i {
     background-image: url(/rsrc.php/v3/yW/r/1swgd2xJasB.png) !important;
+}
+:root, .__fb-light-mode {
+    --filter-disabled-icon: invert(100%) opacity(30%) !important;
+    --filter-placeholder-icon: invert(59%) sepia(11%) saturate(200%) saturate(135%) hue-rotate(176deg) brightness(96%) contrast(94%) !important;
+    --filter-primary-icon: invert(100%) !important;
+    --filter-secondary-icon: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg) brightness(90%) contrast(96%) !important;
+    --filter-warning-icon: invert(77%) sepia(29%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(128%) hue-rotate(359deg) brightness(102%) contrast(107%) !important;
+    --filter-blue-link-icon: invert(73%) sepia(29%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(103.25%) hue-rotate(189deg) brightness(101%) contrast(101%) !important;
+    --filter-positive: invert(37%) sepia(61%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(115%) hue-rotate(91deg) brightness(97%) contrast(105%) !important;
+    --filter-negative: invert(25%) sepia(33%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(110%) hue-rotate(345deg) brightness(132%) contrast(96%) !important;
+}
+g > rect {
+    --darkreader-inline-fill: none !important;
+}
+mask > rect, mask > circle {
+    --darkreader-inline-fill: white !important;
+}
+div[role=article] div.k4urcfbm[aria-hidden="true"] {
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: color;
+    --darkreader-inline-bgcolor: none !important;
+}
+.ha302278 {
+    background-color: var(--fds-white-alpha-40) !important;
+}
+.r4vyqqch {
+    background-color: var(--fds-white-alpha-50) !important;
+}
+.lyi53s4r {
+    background-color: rgba(88,144,255,.9) !important;
+}
+.sp_mWYnHXJ55SW {
+    background-image: url(/rsrc.php/v3/y9/r/yO1o43KF209.png) !important;
+}
+.q2y6ezfg {
+    background-color: rgb(128,128,128) !important;
+}
+.tdjehn4e, .oo1teu6h {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.tdjehn4e:hover, .ovq5dppa: hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.k19f6yf2 {
+    background-color: var(--press-overlay) !important;
+}
+.cxbav39q {
+    background-color: rbga(0, 0, 0, 0.8) !important;
+}
+.rnr61an3 {
+    background-color: var(--hover-overlay) !important;
+}
+.qbubdy2e {
+    fill: none !important;
+}
+.s1i5eluu {
+    background-color: var(--primary-button-background);
+}
+.q66pz984 {
+    color: var(--accent);
+}
+.esnais5j, ._8bb_ img, ._8bb_ i {
+    filter: none;
+}
+.sp_Jc8OKpJq5NW {
+    background-image: url(/rsrc.php/v3/yV/r/RO526ka7f9m.png) !important;
+}
+.sp_C8jQ3Z1xUrS {
+    background-image: url(/rsrc.php/v3/yC/r/XFTwSywolOp.png) !important;
 }
 
 ================================
@@ -1339,7 +1452,7 @@ CSS
     background-blend-mode: color;
 }
 .zone1desc {
-    color: ${#ffffff} !important; 
+    color: ${#ffffff} !important;
 }
 
 ================================
@@ -1512,6 +1625,12 @@ CSS
 .jfk-bubble, .octotree-sidebar, .cc-pr__logo, .cc-octicon, #network canvas, img.network-tree {
     filter: invert(94.4%) hue-rotate(180deg) contrast(90%) !important;
 }
+.progress-bar {
+    background-color: rgba(196, 191, 183, 0.25) !important;
+}
+.progress{
+    background-color: green !important; 
+}
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
 img[src$="spinner-32.gif"],
@@ -1579,7 +1698,7 @@ a.gb_xc
 .i4ewOd-LQLjdd li::before
 .un1lmc-j4gsHd
 .maps-sprite-settings-languages
-.gb_D.gb_tc
+a[href*="about/products"]
 
 ================================
 
@@ -2103,6 +2222,12 @@ CSS
 .buj {
     background-image: url(//ssl.gstatic.com/ui/v1/icons/mail/rfr/density_compact_v1_1x.png) !important;
 }
+::-webkit-scrollbar-thumb {
+    background-color: #424242 !important;
+}
+::-webkit-scrollbar {
+    background-color: transparent !important
+}
 
 ================================
 
@@ -2124,6 +2249,13 @@ CSS
 nav {
   background-color: #288d73 !important;
 }
+
+================================
+
+marinij.com
+
+INVERT
+.custom-logo.logo > a > img
 
 ================================
 
@@ -2303,7 +2435,8 @@ INVERT
 img[src="https://bi.im-g.pl/im/0/24525/m24525630.png"]
 
 CSS
-.main_wrapper {
+.main_wrapper,
+.top_section_bg, .bottom_section_bg {
     background-color: ${#e5e5e5} !important;
 }
 
@@ -2334,6 +2467,16 @@ INVERT
 .header__box__list--social--search
 .header__facebook
 .header__hamburger
+
+================================
+
+neowin.net
+
+CSS
+.select option {
+    background-color: #1c1e1f !important;
+    color: white !important;
+}
 
 ================================
 
@@ -2575,10 +2718,14 @@ CSS
 openstreetmap.org
 
 INVERT
-#map:not(.site-edit #map)
+.map-layout #map
 
 CSS
-#map:not(.site-edit #map) {
+div[dir="ltr", id="map"] {
+    filter: none !important;
+    background: #000 !important;
+}
+.map-layout #map {
     background-color: ${#1b1b1b} !important;
 }
 
@@ -2616,7 +2763,7 @@ INVERT
 .bUWb7c
 .WF1WQd
 img[src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png"]
-.gb_D.gb_tc
+a[href*="about/products"]
 
 ================================
 
@@ -2635,7 +2782,7 @@ plus.google.com
 
 INVERT
 a.gb_b > div
-.gb_D.gb_tc
+a[href*="about/products"]
 
 ================================
 
@@ -2732,6 +2879,15 @@ img[src^="/static/glyphicons/"]
 
 ================================
 
+quickbase.com
+
+CSS
+td.cell, td.label {
+   border-color: rgb(24, 26, 27) !important;
+}
+
+================================
+
 reddit.com
 
 INVERT
@@ -2764,6 +2920,15 @@ div > div:first-child + canvas:last-child {
 }
 .light .OJcb7 {
     background-color: ${rgb(64, 218, 212)} !important;
+}
+
+================================
+
+repl.it
+
+CSS
+.monaco-editor .cursor {
+    background-color: ${#000};
 }
 
 ================================
@@ -3786,8 +3951,12 @@ CSS
 
 web.whatsapp.com
 
+IGNORE INLINE STYLE
+path[fill="currentColor"]
+
 INVERT
 .selectable-text > span._3PxOr
+span[data-icon="audio-download"]
 
 CSS
 ._3Ye_R {
@@ -3799,11 +3968,17 @@ CSS
 ._11ozL {
     border: 5px solid white !important;
 }
-html[dir=ltr] .message-out .tail-container {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFHGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA0LTE5VDEyOjUzOjEzKzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNC0xOVQxMjo1NzowNSswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNC0xOVQxMjo1NzowNSswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplNDljZjc5OS1jN2VhLTQ2NDctOWYyZC1iYTc5MGRiYjJkYmQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ZTQ5Y2Y3OTktYzdlYS00NjQ3LTlmMmQtYmE3OTBkYmIyZGJkIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZTQ5Y2Y3OTktYzdlYS00NjQ3LTlmMmQtYmE3OTBkYmIyZGJkIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDplNDljZjc5OS1jN2VhLTQ2NDctOWYyZC1iYTc5MGRiYjJkYmQiIHN0RXZ0OndoZW49IjIwMjAtMDQtMTlUMTI6NTM6MTMrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5VX0C4AAABTElEQVRIie3Vv0rEQBAG8G+yu5fEzlexsNUHsLUVBS0sbYUDixMs7LQUVARB7yksDRoFfQlBvRPN7d5d7sZOlCDZzW26TD35fuzsn9D84gLDsYjohpmX32/vS3sD13AAYOYlMK/a9FYCAIDzSVgrAKJpbUDUki8kxWVtgBmYfdteZ0CBzyHlUS3AXEs+j0HrvSQl22+kbWMUqs9MDzv9u0dyuTvWK9BfepeC4Mr1YloBEnxBSh67BFsDcUs+5aC1KuGlQBSqDz0cd1w21QkwmW6D6LrKg1gKCPCZy3l3AmIl0gloY5bR/AtEoerrUX7QS1Kn824NmMy0QdT1EV4AJE9PIEWl814KxEokOQVbPuZeAOJQvelRfggAvkbzB9CZ2QNR12fwDyDAp77n/rvka/KwubK9U1f+DD99yyJmr3taqNpX0AAN0AANYFHfejdtRQswUf0AAAAASUVORK5CYII=') !important
+span[data-icon="tail-in"] {
+    color: rgb(34, 46, 53) !important;
 }
-html[dir=ltr] .message-in .tail-container {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAADeB1slAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA0LTE5VDEyOjUzOjEzKzAyOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNC0xOVQxMjo1NiswMjowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNC0xOVQxMjo1NiswMjowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4MzYwY2FhOC1kNjZmLTI2NDctOWRhMi1lODUzMDg4NDA5NjAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODM2MGNhYTgtZDY2Zi0yNjQ3LTlkYTItZTg1MzA4ODQwOTYwIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ODM2MGNhYTgtZDY2Zi0yNjQ3LTlkYTItZTg1MzA4ODQwOTYwIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo4MzYwY2FhOC1kNjZmLTI2NDctOWRhMi1lODUzMDg4NDA5NjAiIHN0RXZ0OndoZW49IjIwMjAtMDQtMTlUMTI6NTM6MTMrMDI6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7wnTSaAAAByElEQVRIie3Uu0sDMRwH8N/vesnltC+LCIJDnQSpUwUnH7g76+qioLgo+G+IOIj+B66iuIn4QBQrioeT4FGpb3GwWj1zFwc5qPVxaRu3freEXD78kvsFhRDwV1o7OgERN4QQvcXziAhB3wIA6IErhBgQAL3fp4M3BwDQghbwd+cZEaU2qwhwOc9SQrx/A4y6+rOGWGS/0ioCAQCArG2PUEr4vwG0PnKiuXxS06SWlw/YVgYL3JtLRMPL5R6VFJBMpYVtZTB3dTWaiMcuykFQptGK47zku2KJxu3C62twD4FEBanuni9jWhfe897fpnVdl+o0qSMqRd5cMRM22ZrMUZX/W8DnpT88Po7Ho5GcMqC4imQqLUI6se/v70YJIa4S4KeEiLEqOJ8N/dEfVQG2lUEuxJTJjPXf7qMqwO+Pp/zzRDwauVAO+Ahq2und7c2gyZijHPCjG+au6xQmTMa84uNSBthWBh0PF8MmXTAoVQ8kU2kBAHB5fTvd0ty04yPKAD/EYPmTo6Ohjva2HGNG8GM3MDYptbG1tfllHKPY093Xv6SsgtL36vjwYPsyez6srILSrMzPaACAgUC1UX7JNaAG1IAaUEE+AFQnnoGbc+MiAAAAAElFTkSuQmCC') !important
+span[data-icon="tail-out"] {
+    color: rgb(5, 71, 64) !important;
+}
+.message-in span > div[style="opacity: 1;"] {
+    background: transparent !important;
+}
+.message-out span > div[style="opacity: 1;"] {
+    background: transparent !important;
 }
 
 ================================
@@ -3922,12 +4097,16 @@ INVERT
 
 wikipedia.org
 
+IGNORE INLINE STYLE
+.legend-color
+
 INVERT
 .mwe-math-element
 .mw-ext-score
 .mw-wiki-logo
 .central-textlogo__image
 .svg-Wikimedia-logo_black
+.header .branding-box > a > span > img
 img[src$=".svg.png"]
 
 CSS
@@ -3963,6 +4142,15 @@ wiktionary.org
 CSS
 div.NavFrame div.NavHead {
     background-image: none !important;
+}
+
+================================
+
+wunderground.com
+
+CSS
+.bar-on  {
+   fill: rgba(0, 0, 0, 0.4) !important;
 }
 
 ================================
@@ -4022,6 +4210,9 @@ body, .BA-topbg {
 www.google.*
 www.google.*.*
 
+IGNORE INLINE STYLE
+.kdPwrb
+
 INVERT
 .gb_hc
 .gb_ec
@@ -4030,7 +4221,7 @@ INVERT
 .gb_0b
 #dictionary-modules img[src*="png"]
 a.gb_b > div
-.gb_D.gb_tc
+a[href*="about/products"]
 
 CSS
 .RNNXgb {
@@ -4122,6 +4313,18 @@ x-kom.pl
 
 INVERT
 .img-logo
+
+================================
+
+xda-developers.com
+
+CSS
+.hb-trigger-inner, .hb-trigger-inner::before, .hb-trigger-inner::after {
+    background-color: ${rgb(48, 51, 53)} !important;
+}
+.hb-trigger:hover .hb-trigger-inner, .hb-trigger:hover .hb-trigger-inner::before, .hb-trigger:hover .hb-trigger-inner::after, .hb-trigger:active .hb-trigger-inner, .hb-trigger:active .hb-trigger-inner::before, .hb-trigger:active .hb-trigger-inner::after, .hb-trigger:focus .hb-trigger-inner, .hb-trigger:focus .hb-trigger-inner::before, .hb-trigger:focus .hb-trigger-inner::after {
+    background-color: ${black} !important;
+}
 
 ================================
 
@@ -4356,6 +4559,9 @@ paper-button.ytd-subscribe-button-renderer[subscribed] {
 }
 .badge-style-type-live-now.ytd-badge-supported-renderer {
     border: 1px solid rgb(255, 78, 69) !important;
+}
+.ytp-load-progress {
+    background: rgba(255,255,255,0.3) !important;
 }
 
 ================================
