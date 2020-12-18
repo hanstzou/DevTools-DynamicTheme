@@ -383,11 +383,11 @@ CSS
     background: var(--darkreader-neutral-background) !important;
     color: var(--darkreader-neutral-text) !important;
 }
-body, 
-.container-modified > .row, 
-#practice-main, 
-#top1000-index-container, 
-#text-practice, 
+body,
+.container-modified > .row,
+#practice-main,
+#top1000-index-container,
+#text-practice,
 #content-bg {
     background: var(--darkreader-neutral-background) !important;
 }
@@ -489,6 +489,15 @@ accounts.google.com
 
 INVERT
 img[src$="signin_tapyes.gif"]
+
+================================
+
+accounts.magister.net
+
+CSS
+.splash-container {
+    z-index: 0 !important;
+}
 
 ================================
 
@@ -772,6 +781,13 @@ CSS
 
 ================================
 
+asana.com
+
+INVERT
+.DatePickerCalendarDate--today .DatePickerCalendarDate-button::after
+
+================================
+
 asus.com
 
 INVERT
@@ -812,7 +828,7 @@ body, .body, table, tbody, tr, td, .corner_bottom {
 atlassian.net
 
 CSS
-#jira-issue-header {
+#jira-issue-header, #jira-issue-header-actions {
     background-color: transparent !important;
 }
 
@@ -978,6 +994,30 @@ CSS
 
 ================================
 
+bing.com
+
+INVERT
+canvas[id^="Microsoft.Maps.Imagery.Road"]
+
+CSS
+.b_searchboxForm {
+    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
+}
+.b_searchboxForm:hover {
+    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
+}
+.b_focus .b_searchboxForm {
+    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
+}
+#sw_as #sa_ul:not(:empty) {
+    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
+}
+#b_results > li.b_ans.b_topborder, #b_results > li.b_ans.b_topborder.b_tophb.b_topshad {
+    box-shadow: ${rgba(13, 13, 13, 0.05)} 0px 0px 0px 1px !important;
+}
+
+================================
+
 bitbucket.org
 
 INVERT
@@ -1077,7 +1117,7 @@ blogs.windows.com
 
 CSS
 .c-logo .c-image {
-    background: var(--darkreader-neutral-background) !important;
+    background: ${white} !important;
 }
 
 ================================
@@ -1136,6 +1176,21 @@ brainly.com
 
 INVERT
 .brn-rich-content > p > img
+
+================================
+
+bugs.chromium.org
+
+CSS
+button[type="submit"] {
+   border-color: var(--darkreader-neutral-text) !important;
+   border-left: var(--darkreader-neutral-text) solid 1px !important;
+}
+
+input#searchq {
+   color: var(--darkreader-neutral-text) !important;
+   border-color: var(--darkreader-neutral-text) !important;
+}
 
 ================================
 
@@ -1209,6 +1264,15 @@ INVERT
 
 ================================
 
+cdp.contentdelivery.nu
+
+CSS
+body {
+    background-image: none !important;
+}
+
+================================
+
 cheapshark.com
 
 CSS
@@ -1230,7 +1294,7 @@ chilkatsoft.com
 CSS
 body {
     background-image: none !important;
-    background-color: var(--darkreader-neutral-background) !important;   
+    background-color: var(--darkreader-neutral-background) !important;
 }
 
 ================================
@@ -1402,6 +1466,12 @@ INVERT
 
 confluence.*
 
+INVERT
+.gliffy-text-with-shape-parent-primary
+.gliffy-text-with-shape-parent-secondary
+.gliffy-text-with-shape-parent-tertiary
+.gliffy-text-with-shape-parent-highlight
+
 CSS
 .geDiagramContainer rect,
 .geDiagramContainer path {
@@ -1538,6 +1608,15 @@ td[background="image/Index_QI_CenterBar.gif"] a {
 
 ================================
 
+cs61a.org
+
+CSS
+table#calendar td {
+    border-color: var(--darkreader-neutral-background) !important;
+}
+
+================================
+
 daily.afisha.ru
 
 INVERT
@@ -1598,6 +1677,16 @@ video#vjs_video_3_html5_api.vjs-tech {
 
 ================================
 
+daum.net
+
+CSS
+.txt_pctop,
+.bg_login {
+    background-image: none !important;
+}
+
+================================
+
 debian.org
 
 CSS
@@ -1634,6 +1723,22 @@ deepl.com
 
 INVERT
 .dl_ad_pro__features_item::before
+
+================================
+
+deeplearningbook.org
+
+INVERT
+.opened > img[src]
+
+CSS
+body {
+    background-color: transparent !important;
+}
+
+#page-container {
+    background-image: none !important;
+}
 
 ================================
 
@@ -1785,7 +1890,7 @@ CSS
 .mon-stat-block::before,
 .mon-stat-block::after,
 body {
-     background-image: none !important;                                                                                                                                                                                                                                                                                                                                                                            
+     background-image: none !important;
 }
 .more-info::after,
 .details-container::after {
@@ -1975,6 +2080,15 @@ dw.com
 CSS
 #bodyMover {
     background-image: none !important;
+}
+
+================================
+
+ea.com
+
+CSS
+img[src*="white-bg-ea-bg-global-white"] {
+    display: none !important;
 }
 
 ================================
@@ -2459,6 +2573,14 @@ img[src$="assets/images/bg-cloud.png"]
 
 ================================
 
+figma.com
+
+IGNORE INLINE STYLE
+div[class*="paint_panels--chit"]
+div[class*="modal--modalShadow"] div
+
+================================
+
 filmweb.pl
 
 CSS
@@ -2507,6 +2629,7 @@ INVERT
 .sleep-chart-yaxis.end
 .supergraph-canvas
 .leaflet-pane.leaflet-map-pane img:not([src*="satellite"])
+.mapboxgl-canvas
 .zone1desc
 
 CSS
@@ -3029,6 +3152,18 @@ INVERT
 
 ================================
 
+heritage.org/index
+
+INVERT
+.bar
+
+CSS
+.content-container {
+    background-image: none !important;
+}
+
+================================
+
 hh.ru
 
 CSS
@@ -3536,6 +3671,15 @@ div.pLText
 
 ================================
 
+kenh14.vn
+
+CSS
+.kbwcb-left, .kbwcb-left::before {
+  background-image: none !important;
+}
+
+================================
+
 komputerswiat.pl
 
 INVERT
@@ -3600,16 +3744,28 @@ INVERT
 
 ================================
 
+launchpad.net
+
+INVERT
+.edit-controls
+#launchpad-logo-and-name
+
+================================
+
 leetcode.com
 leetcode-cn.com
 
 INVERT
+.cursor
 .CodeMirror-cursor
 .user-story-chapter-base .companies-showcase-base .logo
 
 CSS
 [class^=question-picker-detail] {
     background: none !important;
+}
+.monaco-editor, .monaco-editor-background, .monaco-editor .margin {
+    background-color: var(--darkreader-neutral-background) !important;
 }
 
 ================================
@@ -3659,6 +3815,9 @@ li-icon[type="linkedin-logo"],
 .bug-text-color {
     fill: ${black} !important;
 }
+.pds-ge-entry-card__card {
+  background: linear-gradient(to bottom, var(--color-action, var(--blue-70, #0073b1)), var(--color-action, var(--blue-70, #0073b1)) 4px, var(--darkreader-neutral-background, #fff) 4px, var(--darkreader-neutral-background, #fff)) !important;
+}
 .vjs-load-progress {
     background-color: hsla(0,0%,100%,.3) !important;
 }
@@ -3668,6 +3827,42 @@ li-icon[type="linkedin-logo"],
 }
 .vjs-volume-bar {
     background-color: hsla(0,0%,100%,.4) !important;
+}
+
+================================
+
+linode.com
+
+INVERT
+.c-identity__image
+
+CSS
+.o-form__input {
+    background-color: rgb(41, 44, 46) !important;
+    border-color: rgb(232, 230, 227) !important;
+    color: rgb(232, 230, 227) !important;
+}
+
+.o-form__input:hover {
+    background: transparent !important;
+}
+
+.o-form__icon::before {
+    color: rgb(232, 230, 227) !important;
+}
+
+.o-form__input::placeholder {
+   color: rgb(232, 230, 227) !important;
+}
+
+.o-button, o-button--secondary {
+    background-color: rgb(41, 44, 46) !important;
+    border-color: rgb(232, 230, 227) !important;
+    color: rgb(232, 230, 227) !important;
+}
+
+.o-button:hover {
+    background: transparent !important;
 }
 
 ================================
@@ -3686,6 +3881,18 @@ body {
     background-image: none !important;
     background-color: var(--darkreader-neutral-background) !important;
 }
+
+================================
+
+linuxmint.com
+
+CSS
+body {
+   background-color: #e4ffc9 !important;
+}
+
+IGNORE IMAGE ANALYSIS
+#wrapper
 
 ================================
 
@@ -3743,6 +3950,14 @@ CSS
 img {
     mix-blend-mode: normal !important;
 }
+
+================================
+
+m.dianping.com
+
+INVERT
+.flash-screen
+.header-download-img
 
 ================================
 
@@ -4741,6 +4956,13 @@ INVERT
 
 ================================
 
+orf.at/corona/stories/daten
+
+INVERT
+.bg
+
+================================
+
 overleaf.com
 
 INVERT
@@ -4775,12 +4997,19 @@ body {
 
 ================================
 
+peardeck.com
+
+INVERT
+.boxy-svg
+
+================================
+
 peonaviveu.blogspot.com
 
 CSS
 body {
-    background-image: none !important;    
-    background-color: var(--darkreader-neutral-background) !important;                                                                                                                                                                                                                                                                     
+    background-image: none !important;
+    background-color: var(--darkreader-neutral-background) !important;
 }
 
 ================================
@@ -4856,6 +5085,13 @@ INVERT
 
 ================================
 
+portal.qiniu.com
+
+INVERT
+.global-loading-content img
+
+================================
+
 praca.money.pl
 
 CSS
@@ -4878,13 +5114,15 @@ CSS
 .app-offer__content {
     background-color: rgb(25, 26, 27) !important;
 }
-.szcont .f1top {
+.szcont .f1top,
+.szcont .f1template_content {
     background-color: rgba(0, 0, 0, 0.25) !important;
     background-blend-mode: color;
 }
 
 IGNORE IMAGE ANALYSIS
 .szcont .f1top
+.szcont .f1template_content
 
 ================================
 
@@ -4978,12 +5216,29 @@ td.cell, td.label {
 
 ================================
 
+quizlet.com
+
+CSS
+.UIKeyboardHint {
+    background-color: transparent !important;
+}
+
+================================
+
 quora.com
 
 CSS
 .logo_fill {
     fill: rgb(219, 87, 83) !important;
 }
+
+================================
+
+qwant.com
+
+INVERT
+.background-home__logo
+.home__logo__container .home__logo
 
 ================================
 
@@ -5036,7 +5291,7 @@ redgamingtech.com
 
 CSS
 body {
-    background-image: none !important;                                                                                                                                                                                                                                                                    
+    background-image: none !important;
 }
 
 ================================
@@ -5099,6 +5354,15 @@ repl.it
 CSS
 .monaco-editor .cursor {
     background-color: ${#000};
+}
+
+================================
+
+resmigazete.gov.tr
+
+CSS
+img[src="/assets/img/arma.png"] {
+    filter: hue-rotate(180deg) invert(1) brightness(2);
 }
 
 ================================
@@ -5220,6 +5484,7 @@ img[src*="scholar_logo"]
 
 scp-wiki.net
 scp-wiki-cn.wikidot.com
+scpwiki.com
 
 CSS
 div#container-wrap, .panel-body, .content-panel {
@@ -5466,6 +5731,14 @@ CSS
 
 ================================
 
+smzdm.com
+
+INVERT
+#logo
+.logo-left
+
+================================
+
 snack.expo.io
 
 CSS
@@ -5569,6 +5842,13 @@ sso.qiniu.com
 
 INVERT
 .navbar-brand
+
+================================
+
+stackage.org
+
+INVERT
+.logo
 
 ================================
 
@@ -6353,22 +6633,24 @@ CSS
 
 tweakers.net
 
+INVERT
+#categoryBrowser li.more:not(.active)
+.infoBox > .title:before
+
 CSS
-.ankeiler>a.commentCount {
+.ankeiler > a.commentCount {
     background-image: url(../../../g/icons/commentcounter_small_bg.svg) !important;
     text-decoration: none !important;
 }
 .thumb.category {
     border: none !important;
 }
-#categoryBrowser li a{
+#categoryBrowser li a {
     background: none !important;
 }
 
-#categoryBrowser li.more {
-    background-image: url("../../../../g/if/categories/arrows.png") !important;
-    background-position: 252px 10px !important;
-    background-repeat: no-repeat !important;
+#categoryBrowser li a, #categoryBrowser li.active > a {
+    color: rgb(32, 144, 236) !important;
 }
 
 #categoryBrowser.sidebar li.more {
@@ -6598,6 +6880,21 @@ vandale.nl
 
 INVERT
 #content-top.form
+
+================================
+
+vbulletin.com
+
+CSS
+.std {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.hero-text,
+#hometext li,
+#hometext h4,
+#hometext_buttons div p {
+    color: var(--darkreader-neutral-background) !important;
+}
 
 ================================
 
@@ -7009,7 +7306,8 @@ div .thumbimage img[src$=".png"] {
 }
 .mw-mmv-image .svg,
 .fullImageLink [src*=".svg"],
-a[href$=".svg"]:hover > img {
+a[href$=".svg"]:hover > img,
+a[href*=".gif"]:hover > img {
     background-color: rgba(255, 255, 255, 0.75) !important;
     background-blend-mode: color;
 }
@@ -7135,27 +7433,6 @@ CSS
 
 ================================
 
-www.bing.com
-
-CSS
-.b_searchboxForm {
-    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
-}
-.b_searchboxForm:hover {
-    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
-}
-.b_focus .b_searchboxForm {
-    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
-}
-#sw_as #sa_ul:not(:empty) {
-    box-shadow: ${rgba(0, 0, 0, 0.1)} 0px 0px 0px 1px !important;
-}
-#b_results > li.b_ans.b_topborder, #b_results > li.b_ans.b_topborder.b_tophb.b_topshad {
-    box-shadow: ${rgba(13, 13, 13, 0.05)} 0px 0px 0px 1px !important;
-}
-
-================================
-
 www.bromite.org
 
 IGNORE IMAGE ANALYSIS
@@ -7191,7 +7468,11 @@ body, .BA-topbg {
 .TOP-bh {
     background: linear-gradient(to right, #117e96 0%, #116b80 35%, #125b6b 80%);
 }
+
 .TOP-msglist div.new a {
+    color: ${#969696};
+}
+.TOP-msglist div.new a .link {
     color: ${#3391ff};
 }
 
@@ -7592,7 +7873,7 @@ html:not(.style-scope) {
 }
 button[aria-label*="like this video along with"][aria-pressed="true"] > yt-icon {
     fill: var(--yt-spec-call-to-action) !important;
-    color: var(--yt-spec-call-to-action) !important;                                                        
+    color: var(--yt-spec-call-to-action) !important;
 }
 .ytp-menuitem-toggle-checkbox {
     background: rgba(255, 255, 255, 0.3) !important;
@@ -7667,9 +7948,15 @@ CSS
 
 zdic.net
 
+INVERT
+li a img
+.kxtimg
+.zipic img
+.zx img
+
 CSS
-.zisong img {
-    background-color: ${black} !important;
+.nr-box-header {
+    background-image: none !important;
 }
 
 ================================
