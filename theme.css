@@ -3,7 +3,7 @@
 INVERT
 img.editor-inline-macro:not(.with-chrome)
 table.wysiwyg-macro::after
-.jfk-bubble
+.jfk-bubble.gtx-bubble
 
 CSS
 body {
@@ -388,6 +388,13 @@ body {
 
 ================================
 
+2gis.*
+
+INVERT
+#map
+
+================================
+
 3.basecamp.com
 
 CSS
@@ -407,6 +414,9 @@ body, .nav__main {
 CSS
 .catend {
     background: ${#e8e8e8} !important;
+}
+div.description > span {
+    display: none;
 }
 
 ================================
@@ -428,6 +438,33 @@ ableton.com
 INVERT
 .main-footer__basics__logo
 .main-footer__secondary__signature__logo
+
+================================
+
+acer.com
+
+INVERT
+div.col.a-offset-2.a-8.c-offset-0.c-6.gutter.logos
+div.tx.banner-remotesolutions-comp.container.max-width-d
+div.tx.banner-workanywhere-comp.container.max-width-d
+
+================================
+
+adguard.com
+
+INVERT
+a.header__logo
+svg.reviews__icon-topic
+.article__section--list-ico .md__list .md__img
+.article__content--title-ico .article__section .md__title .md__img
+.p-header-logo.p-header-logo--image img
+
+================================
+
+aiming.pro
+
+INVERT
+#left_side_bar > div.logo > a > img
 
 ================================
 
@@ -460,6 +497,15 @@ CSS
 .question-number {
     color: ${white} !important;
 }
+
+================================
+
+aljazeera.com
+
+INVERT
+#site-logo > img
+.navbar-brand > img
+#navbar-hamburger-mobile
 
 ================================
 
@@ -590,11 +636,35 @@ CSS
 
 ================================
 
+asus.com
+
+INVERT
+span.mobile-menu-toggle.mobile
+em#searchopen.icon-search
+#af-header .af-inner .logo
+
+================================
+
 atcoder.jp
 
 CSS
 #fixed-server-timer {
     color: #333;
+}
+
+================================
+
+atlas.herzen.spb.ru
+guide.herzen.spb.ru
+job.herzen.spb.ru
+
+INVERT
+img[src="/images/logo.png"]
+hr
+
+CSS
+body, .body, table, tbody, tr, td, .corner_bottom {
+    background: none !important;
 }
 
 ================================
@@ -644,9 +714,33 @@ INVERT
 
 ================================
 
+bbc.co.uk/weather
+bbc.com/weather
+
+INVERT
+.orb-nav-section.orb-nav-blocks
+.orb-icon.orb-icon-arrow
+
+CSS
+.wr-icon-weather-type__svg-background,
+.wr-icon-rain__svg-background,
+.wr-icon-wind-direction__svg-background,
+.wr-icon-gel__svg-background {
+    opacity: 0% !important;
+}
+
+.wr-value--windspeed {
+    color: ${#dad7d2} !important;
+}
+
+.wr-c-environmental-data__icon-text {
+    color: ${#dcd9d4} !important;
+}
+
+================================
+
 bbc.com/news
 bbc.com/sport
-bbc.com/weather
 bbc.com/travel
 bbc.com/capital
 bbc.com/autos
@@ -741,6 +835,15 @@ div#logo
 
 ================================
 
+bol.com
+
+CSS
+.skeleton-image[loaded] .skeleton-image__img {
+    mix-blend-mode: normal !important;
+}
+
+================================
+
 booking.com
 
 INVERT
@@ -768,6 +871,13 @@ article, article section, article footer, .css-1fzo8jw, .css-efdc07, article .cs
 
 ================================
 
+brainly.com
+
+INVERT
+.brn-rich-content > p > img
+
+================================
+
 bugs.python.org
 
 INVERT
@@ -780,6 +890,18 @@ CSS
 #logolink {
   filter: contrast(80%) saturate(160%) brightness(135%);
 }
+
+================================
+
+calendar.google.com
+
+CSS
+div[role="checkbox"] > div > div > div {
+    border: 1px solid ${black} !important;
+}
+
+IGNORE INLINE STYLE
+div[role="checkbox"]
 
 ================================
 
@@ -801,6 +923,13 @@ INVERT
 
 ================================
 
+citymapper.com
+
+INVERT
+#map
+
+================================
+
 classroom.google.com
 
 INVERT
@@ -808,39 +937,56 @@ img[src$="dark_create_class_arrow.svg"]
 
 ================================
 
+cleantechnica.com
+
+CSS
+body {
+    background-image: none !important; 
+	background-color: #1d1e1f !important; 
+}
+
+================================
+
 cloud.databricks.com
+pages.databricks.com
 *.azuredatabricks.net
 
 INVERT
 .figure
+#sparkui-iframe-body #plan-viz-graph svg g.cluster rect
+#sparkui-iframe-body #plan-viz-graph svg g.node rect
 
 CSS
 text {
-  fill: white;
+    fill: ${black};
 }
 
 .cm-string {
-  color: rgb(132, 179, 235) !important;
+    color: rgb(132, 179, 235) !important;
 }
 
 .cm-keyword {
-  color: rgb(232, 121, 172) !important;
+    color: rgb(232, 121, 172) !important;
 }
 
 .cm-variable-2 {
-  color: rgb(97, 215, 255) !important;
+    color: rgb(97, 215, 255) !important;
 }
 
 li.CodeMirror-hint {
- font-family: Source Code Pro, Menlo, monospace;
+    font-family: Source Code Pro, Menlo, monospace;
 }
 
 span[role="presentation"] {
-  color: white !important;
+    color: ${black} !important;
 }
 
 .CodeMirror-cursor {
-  border-left-color: white !important;
+    border-left-color: ${black} !important;
+}
+
+.ansiout {
+    color: ${rgb(85, 85, 85)} !important;
 }
 
 ================================
@@ -887,6 +1033,13 @@ INVERT
 .roundbox-lb
 .roundbox-rb
 .delete-resource-link
+
+================================
+
+confectioneryproduction.com
+
+INVERT
+#mainLogo img
 
 ================================
 
@@ -985,6 +1138,29 @@ img[src$=".png"] {
 
 ================================
 
+daily.afisha.ru
+
+INVERT
+.sprite-logo-daily
+.headline__open
+.search-icon
+.sprite-search-black-26
+mark
+
+================================
+
+dailydot.com
+
+INVERT
+h1.u-about-pitch
+
+CSS
+svg.main-logo.inline-flex g g[fill="#110133"] {
+    --darkreader-inline-fill: ${#110133} !important;
+}
+
+================================
+
 darksky.net
 
 INVERT
@@ -1006,6 +1182,14 @@ video#vjs_video_3_html5_api.vjs-tech {
 
 ================================
 
+debijbel.nl
+
+INVERT
+.siteLogo
+.filter-item__link > img
+
+================================
+
 decathlon.pl
 
 INVERT
@@ -1014,10 +1198,31 @@ INVERT
 
 ================================
 
+deccanchronicle.com
+
+INVERT
+img[src$="logo.png"]
+
+================================
+
 deepl.com
 
 INVERT
 .dl_ad_pro__features_item::before
+
+================================
+
+deno.land
+
+INVERT
+img[src="/logo.svg"]
+
+================================
+
+designobserver.com
+
+INVERT
+.dologo
 
 ================================
 
@@ -1038,7 +1243,6 @@ h4, h5, h6, a,
 developer.mozilla.org
 
 INVERT
-.logo
 mark
 
 ================================
@@ -1072,6 +1276,13 @@ CSS
 
 ================================
 
+dnslytics.com
+
+INVERT
+img[src*="logo.png"]
+
+================================
+
 docs.google.com
 
 INVERT
@@ -1096,7 +1307,13 @@ INVERT
 .vs-icon
 .vpc-icon
 .docs-analytics-img
-.apps-share-sprite
+.share-butter-copy-icon
+.doc-previews-indicator-popover .docs-link-bubble-mime-icon
+img[src$="googlelogo_dark_clr_74x24px.svg"]
+.exportUnderline
+.freebirdMaterialIconIconEl
+.quantumWizTogglePapercheckboxCheckMark
+.docs-gm #docs-titlebar-share-client-button .jfk-button .scb-button-icon:not([class*="white"])
 
 CSS
 .docs-preview-palette-item {
@@ -1121,8 +1338,11 @@ CSS
 .docs-gm .docs-revisions-switch.apps-ui-material-slide-toggle-container-checked .apps-ui-material-slide-toggle-thumb {
     background-color: rgb(9, 64, 155) !important;
 }
-.docs-linkbubble-bubble {
-    filter: none !important;
+.docs-text-ui-cursor-blink {
+    fill: ${black} !important;
+}
+.ndfHFb-c4YZDc.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Bz112c:not([onclick]):not(:link):not(:visited) {
+    background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite26.svg') !important;
 }
 
 ================================
@@ -1131,6 +1351,11 @@ drive.google.com
 
 INVERT
 img[src$="google_gsuite"]
+
+CSS
+.ndfHFb-c4YZDc.ndfHFb-c4YZDc-i5oIFb .ndfHFb-c4YZDc-Bz112c:not([onclick]):not(:link):not(:visited) {
+    background-image: url('//ssl.gstatic.com/docs/common/viewer/v3/v-sprite26.svg') !important;
+}
 
 ================================
 
@@ -1253,6 +1478,21 @@ CSS
 }
 #highcharts-0 text{
     text-shadow: none !important;
+}
+
+================================
+
+enjen.net
+
+CSS
+body {
+    background-image: none !important;
+}
+input.input-medium {
+    background-image: none !important;
+}
+select.input-small {
+    background-image: none !important;
 }
 
 ================================
@@ -1385,12 +1625,6 @@ CSS
     --filter-positive: invert(37%) sepia(61%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(115%) hue-rotate(91deg) brightness(97%) contrast(105%) !important;
     --filter-negative: invert(25%) sepia(33%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(200%) saturate(110%) hue-rotate(345deg) brightness(132%) contrast(96%) !important;
 }
-g > rect {
-    --darkreader-inline-fill: none !important;
-}
-mask > rect, mask > circle {
-    --darkreader-inline-fill: white !important;
-}
 div[role=article] div.k4urcfbm[aria-hidden="true"] {
     background-color: rgba(0, 0, 0, 0.25);
     background-blend-mode: color;
@@ -1438,7 +1672,8 @@ div[aria-label="Change Position"] .ha302278,
     color: var(--accent);
 }
 .esnais5j, ._8bb_ img, ._8bb_ i,
-._8bb_ video, ._8bb_ ._w80, ._8bb_ ._7umt ._47yj {
+._8bb_ video, ._8bb_ ._w80, ._8bb_ ._7umt ._47yj,
+._8bb_ [style*='background-image: url'] {
     filter: none !important;
 }
 div[role="button"] > i.hu5pjgll:not(.sp_Jc8OKpJq5NW, .sp_T89CCTT7d9Z),
@@ -1451,7 +1686,8 @@ a[role="link"] > i.hu5pjgll, ._3w97 {
 ._2yu8 {
     background-color: rgba(255, 255, 255, .5) !important;
 }
-._8bb_ ._1c7f, img[src*="map"], [style*="map"] {
+img[src*="map"], [style*="map"],
+._8bb_ img[src*="map"], ._8bb_ [style*="map"] {
     filter: invert(100%) hue-rotate(180deg) !important;
 }
 .sp_Jc8OKpJq5NW {
@@ -1466,10 +1702,42 @@ a[role="link"] > i.hu5pjgll, ._3w97 {
 ._3w97 {
     background-image: url(/rsrc.php/v3/ya/r/4ck_WlGmssY.png) !important;
 }
+.j7vl6m33 {
+    fill: var(--always-white) !important;
+}
+.sp_j_D4UkXXXbu {
+    background-image: url(/rsrc.php/v3/y-/r/kQ6of4djkqp.png) !important;
+}
+.sp_9LGGDWd8SIG {
+    background-image: url(/rsrc.php/v3/yu/r/2P7zbFKbKAC.png) !important;
+}
+.sp_1MKbKN184cB {
+    background-image: url(/rsrc.php/v3/yv/r/Sww96KKq8LS.png) !important;
+}
+.sp_ENb4WaRga4J {
+    background-image: url(/rsrc.php/v3/yy/r/8OUMcyHbiu8.png) !important;
+}
+.sp_zT9aHJDYI11 {
+    background-image: url(/rsrc.php/v3/yB/r/99Zvs7cEY2d.png) !important;
+}
 
 IGNORE INLINE STYLE
 [role="button"] svg
 [role="button"] svg line
+div svg[viewBox="0 0 36 36"] mask path
+mask > rect
+mask > circle
+g > rect
+
+================================
+
+fanatical.com
+
+INVERT
+.trustpilot > .logo-container > a > img
+
+IGNORE INLINE STYLE
+div.drm-container svg g
 
 ================================
 
@@ -1487,9 +1755,26 @@ mathprofi.net
 mathworld.wolfram.com
 reference.wolfram.com
 terrytao.wordpress.com
+wolframalpha.com
 
 INVERT
 img
+
+================================
+
+fast.com
+
+INVERT
+div.logo
+div.powered-by
+
+CSS
+div.logo {
+    background-image: url("https://fast.com/assets/new-logo-vert-37861c.svg") !important;
+}
+div.powered-by {
+    background-image: url("https://fast.com/assets/poweredby-865a3b.svg") !important
+}
 
 ================================
 
@@ -1513,10 +1798,26 @@ CSS
 
 ================================
 
+fedex.com
+
+CSS
+.fx-global-prelog-link.fx-showlogin span {
+    background-image: none !important;
+}
+
+================================
+
 ffmpeg.zeranoe.com
 
 INVERT
 .active
+
+================================
+
+filterlists.com
+
+IGNORE INLINE STYLE
+header.ant-layout-header img
 
 ================================
 
@@ -1561,6 +1862,27 @@ CSS
 
 ================================
 
+flyzipline.com
+
+INVERT
+#logo
+
+CSS
+#logo {
+    background-image: url(/blogo.svg) !important;
+}
+
+================================
+
+fontsinuse.com
+
+INVERT
+.fiu-header__branding
+.fiu-sample-list__item img
+.fiu-gallery-head__text img
+
+================================
+
 foobar2000.org
 
 INVERT
@@ -1574,6 +1896,14 @@ CSS
 .firstlevel {
     color: ${#666666} !important;
 }
+
+================================
+
+forums.tomshardware.com
+
+INVERT
+img[src="/styles/tomshardware/tomshardware/toms-hardware-logo.png"]
+div.trophyShowcase.trophyShowcase--postbit
 
 ================================
 
@@ -1597,42 +1927,9 @@ CSS
 
 ================================
 
-gazetawroclawska.pl
-dziennikzachodni.pl
-pomorska.pl
-
-INVERT
-.atomsNavigationFooterLegal
-.componentsSiteHeader
-.atomsNavigationFooterAccordion
-.atomsNavigationFooterSocialmedia__link
-.atomsNavigationFooterSocialmedia__button
-.atomsArticlePollVoting__pulseDescription
-.atomsArticlePollVoting__form
-.atomsArticlePollVoting__voteTitle
-.componentsArticleGallery__captionDescription
-.componentsPromotionsVideo__title
-.layoutsGrid
-article .atomsArticleTile__tileImg
-.layoutsGrid--last .atomsArticleTile__tileImg
-.componentsArticleGallery__img
-.componentsArticleGallery__thumbnail
-.atomsArticleFootTools__button
-.componentsPromotionsOffers__fakeImg
-.atomsNavigationFooterLinks__logoImg
-.ytp-cued-thumbnail-overlay
-.componentsRecommendationsSelected__photo
-.componentsPromotionsSubjectCategoryPromoted__image
-p.nieprzeczytane
-p.przeczytane
-article iframe
-.atomsPromotionsQuiz__imageWrapper
-.atomsPromotionsLink__imageWrapper
-
-================================
-
-geizhals.at
-geizhals.de
+geizhals.*
+skinflint.co.uk
+cenowarka.pl
 
 CSS
 img.listview__image, img.galleryview__image {
@@ -1705,6 +2002,7 @@ a[href="https://github.com"]
 ================================
 
 github.com
+github.*.com
 
 CSS
 .markdown-body code,
@@ -1778,6 +2076,12 @@ CSS
 .jfk-bubble, .octotree-sidebar, .cc-pr__logo, .cc-octicon, #network canvas, img.network-tree {
     filter: invert(94.4%) hue-rotate(180deg) contrast(90%) !important;
 }
+.blob-code-inner, .blob-code-inner > *, .CodeMirror pre > span, .CodeMirror-linenumber {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace !important;
+}
+#commit-activity-detail > svg {
+    fill: ${black} !important;
+}
 img.js-loading-spinner,
 include-fragment.octocat-spinner,
 img[src$="spinner-32.gif"],
@@ -1804,6 +2108,14 @@ gitlab.com
 INVERT
 .js-contrib-calendar
 
+CSS
+:root {
+    --svg-status-bg: #181a1b;
+}
+.avatar, .avatar-container {
+    border: none !important;
+}
+
 ================================
 
 giveawayoftheday.com
@@ -1811,6 +2123,18 @@ giveawayoftheday.com
 CSS
 .countdown-amount .diggit {
     background: url(/images/sprite.png) 0 0 no-repeat !important;
+}
+
+================================
+
+gog.com
+
+INVERT
+i.icn.icn--close
+
+CSS
+.menu-anonymous__shelf {
+    background-image: url("https://menu-static.gog-statics.com/assets/img/shelf.png") !important;
 }
 
 ================================
@@ -1847,6 +2171,17 @@ a.gb_xc
 .un1lmc-j4gsHd
 .maps-sprite-settings-languages
 a[href*="about/products"]
+.google-logo
+.watermark
+
+================================
+
+gramota.ru
+
+INVERT
+img[src*="logo-gramota"]
+.caret
+td > strong
 
 ================================
 
@@ -1979,7 +2314,7 @@ ikea.*
 CSS
 .range-revamp-ratings-bar__star--empty path,
 .range-revamp-ratings-bar__star--half path:first-child  {
-    fill: ${rgb(246, 245, 244)} !important; 
+    fill: ${rgb(246, 245, 244)} !important;
 }
 
 IGNORE INLINE STYLE
@@ -1987,7 +2322,22 @@ IGNORE INLINE STYLE
 
 ================================
 
+ilyabirman.*
+
+INVERT
+img[src*="layout-win"]
+
+CSS
+body {
+    background: none !important;
+}
+
+================================
+
 imdb.com
+
+INVERT
+.a-icon
 
 CSS
 #wrapper {
@@ -2102,6 +2452,11 @@ INVERT
 .glyphsSpriteVideo_chat__outline__24__grey_9
 .glyphsSpriteWhatsapp__outline__24__grey_9
 .glyphsSpriteX__outline__24__grey_9
+span.LikeSprite.embedSpriteHeartOpen
+span.hideText.embedSpriteComment
+span.hideText.embedSpriteShare
+span.hideText.embedSpriteSaveOpen
+span.Sprite.embedSpriteGlyph.hideText
 
 CSS
 .tlZCJ:checked ~ .mwD2G::before {
@@ -2123,6 +2478,8 @@ ipko.pl
 
 INVERT
 .ZLc3L
+._1IGN3
+a.x-logo
 
 CSS
 ._1IGN3 {
@@ -2232,6 +2589,19 @@ CSS
 
 ================================
 
+kaggle.com
+kaggleusercontent.com
+
+CSS
+div.output_png img {
+    background-color: ${black} !important;
+}
+
+IGNORE INLINE STYLE
+div.output_png img
+
+================================
+
 keep.google.com
 
 INVERT
@@ -2246,6 +2616,14 @@ komputerswiat.pl
 
 INVERT
 .serviceIcon
+
+================================
+
+laptopmag.com
+
+INVERT
+div#publisherDetails.logo
+.qc-cmp-publisher-logo
 
 ================================
 
@@ -2278,6 +2656,13 @@ lastpass.com
 
 INVERT
 .lp-header__logo--link
+
+================================
+
+leetcode.com
+
+INVERT
+.CodeMirror-cursor
 
 ================================
 
@@ -2342,11 +2727,55 @@ li-icon[type="linkedin-logo"],
 
 ================================
 
+linotype.com
+
+INVERT
+#logo
+
+================================
+
 lirc.org
 
 CSS
 body {
     background: none !important;
+}
+
+================================
+
+livemint.com
+
+INVERT
+div.icoMenu
+a.icoSearch.iconSprite
+a.icoBell.iconSprite
+a.icoBookmark2.iconSprite
+a.icoBookmark3.iconSprite
+a.icoTwit.iconSprite
+div.icoShare.iconSprite
+
+================================
+
+lkml.org
+
+INVERT
+img[src*="corner"]
+
+CSS
+body {
+    background-image: none !important;
+}
+td.c {
+    color: ${white} !important;
+}
+
+================================
+
+lowes.com
+
+CSS
+img {
+    mix-blend-mode: normal !important;
 }
 
 ================================
@@ -2406,6 +2835,17 @@ CSS
 ::-webkit-scrollbar {
     background-color: transparent !important
 }
+
+IGNORE INLINE STYLE
+.at
+.au
+.av
+.qj
+.hU.hM
+.hV.hM
+.ajZ-Jt
+.aH5
+.JA-Kn-Jr-Kw-Jt
 
 ================================
 
@@ -2469,6 +2909,16 @@ INVERT
 .fp-volumebar em.fp-color
 .fp-fullscreen-line
 .fp-fullscreen-dot
+
+================================
+
+matrix.org
+
+INVERT
+.mxnavbar__logo
+.mxnavsection__icon
+.mxgrid__item__bg__img
+.mxblock__explore__item__img
 
 ================================
 
@@ -2551,7 +3001,6 @@ messenger.com
 INVERT
 ._4rv6
 a._4ce_
-.j7vl6m33
 
 CSS
 ._8rsr {
@@ -2565,6 +3014,25 @@ CSS
 }
 ._576q div {
   background-color: transparent !important;
+}
+.j7vl6m33 {
+    fill: var(--always-white) !important;
+}
+
+================================
+
+microsoft.com
+answers.microsoft.com
+
+INVERT
+img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4sQDc"]
+img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pxBu"]
+img[src*="img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pkvE"]
+img[src*="/static/images/inreplyto.svg"]
+
+CSS
+.c-logo .c-image {
+    background: ${black} !important;
 }
 
 ================================
@@ -2630,6 +3098,24 @@ INVERT
 
 ================================
 
+moovitapp.com
+
+INVERT
+.map
+.logo
+
+================================
+
+morele.net
+
+INVERT
+.h-logo.col
+.h-control-btn > [src="/static/img/shop/icon-bezpieczna-dostawa.svg"]
+.swiper-slide-visible.mx-auto.swiper-slide > .d-flex.img-container
+div.cn-different-frontend.cn-menu-item-hover.cn-shop > .cn-main-name.cn-name > .cn-name-value > span:nth-of-type(1)
+
+================================
+
 moto.pl
 
 INVERT
@@ -2643,6 +3129,18 @@ CSS
 
 ================================
 
+msmgtoolkit.in
+
+CSS
+.cid-r89gzwx5mR .mbr-section-title {
+    color: ${white};
+}
+.cid-r89gzwx5mR .mbr-section-subtitle {
+    color: ${white};
+}
+
+================================
+
 mullvad.net
 
 CSS
@@ -2652,44 +3150,20 @@ CSS
 
 ================================
 
+my.nextdns.io
+
+INVERT
+img[src="/static/media/logo-large@2x.ac61cadf.png"]
+img[src^="data:image/png;"]
+
+================================
+
 my.nintendo.com
 
 CSS
 .Layout-app {
     background-image: url(https://svgshare.com/i/HcN.svg);
 }
-
-================================
-
-naszemiasto.pl
-
-INVERT
-.componentsNavigationNavbar
-.atomsNavigationFooterLegal
-.componentsSiteHeader
-.atomsNavigationFooterAccordion
-.atomsNavigationFooterSocialmedia__link
-.atomsNavigationFooterSocialmedia__button
-.atomsArticlePollVoting__pulseDescription
-.atomsArticlePollVoting__form
-.atomsArticlePollVoting__voteTitle
-.componentsArticleGallery__captionDescription
-.componentsPromotionsVideo__title
-.layoutsGrid
-aside .atomsArticleTile__tileImg
-.componentsArticleGallery__img
-.componentsArticleGallery__thumbnail
-.atomsArticleFootTools__button
-.componentsPromotionsOffers__fakeImg
-.atomsNavigationFooterLinks__logoImg
-.ytp-cued-thumbnail-overlay
-.componentsPromotionsSubjectCategoryPromoted__image
-.componentsRecommendationsSelected__photo
-p.nieprzeczytane
-p.przeczytane
-article iframe
-.atomsPromotionsQuiz__imageWrapper
-.atomsPromotionsLink__imageWrapper
 
 ================================
 
@@ -2703,6 +3177,26 @@ INVERT
 
 ================================
 
+nature.com
+
+INVERT
+.header-logo
+
+================================
+
+nbc12.com
+
+INVERT
+div.logo.logo-slim
+div.logo.logo-large.logo-footer
+
+CSS
+.logo {
+    background-image: url(/pb/resources/images/wwbt-logo.svg?v=92) !important;
+}
+
+================================
+
 neowin.net
 
 CSS
@@ -2710,6 +3204,24 @@ CSS
     background-color: #1c1e1f !important;
     color: white !important;
 }
+
+================================
+
+netzpolitik.org
+
+INVERT
+img[src*="/wp-content/themes/liebefeld/images/netzpolitik_logo.svg"]
+img[src*="/wp-content/themes/liebefeld/images/palasthotel.svg"]
+a.menu__canvas--toggle
+
+================================
+
+news.mynavi.jp
+
+INVERT
+.itsearch-head .logo
+.site-header__bnr
+.site-header__logo
 
 ================================
 
@@ -2724,6 +3236,22 @@ nexojornal.com.br
 
 INVERT
 .g-aiImg
+
+================================
+
+nextdns.io
+
+CSS
+.index .hero .content .logo {
+    background-image: url(/static/images/logo.png);
+    background: 181a1b;
+}
+.index .key-features .feature.blocklists {
+    background-image: none !important;
+}
+
+IGNORE INLINE STYLE
+path.rsm-geography
 
 ================================
 
@@ -2752,6 +3280,18 @@ INVERT
 
 ================================
 
+nirsoft.net
+
+CSS
+.menub1 a:link, .menub1 a:visited{
+    color: #0040ff;
+}
+.menub1 a:hover {
+    color: #ffffd0;
+}
+
+================================
+
 npmjs.com
 
 INVERT
@@ -2773,6 +3313,23 @@ ntlite.com
 CSS
 .fr-wrapper *::selection {
     background-color: dodgerblue !important;
+}
+
+================================
+
+nvidia.com
+nvidia.in
+
+INVERT
+svg.global-footer__logo
+a.brandLink
+
+CSS
+div.nvidia a svg {
+    fill: ${black} !important;
+}
+div.brand-container a svg {
+    fill: ${black} !important;
 }
 
 ================================
@@ -2857,6 +3414,40 @@ omnicalculator.com
 
 INVERT
 .GenericText
+
+================================
+
+omnivox.ca
+
+INVERT
+td[style*="/cvir/UI"]
+img[src^="/cvir/UI/Theme/Lea_Defaut/Images/Accueil_LEA"]
+img[src="/cvir/UI/Theme/Lea_Defaut/Images/mesclasses_cg_subtop.jpg"]
+img[src^="/cvir/UI/Theme/Lea_Defaut/Images/accueil_"]
+img[src$="/bas_du_menu.jpg"]
+img[src$="tile.jpg"]
+.cgSelect
+.mioLinks
+.calendrier
+.servLinks
+.descSection
+
+CSS
+.cgSelect > table > tbody > tr > td:nth-child(1) > a > font {
+    color: green !important;
+}
+.calendrier > table > tbody > tr,
+.calendrier > table > tbody > tr > td > img,
+.calendrier > table > tbody > tr > td > table > tbody > tr > td > img
+{
+    filter: invert(100%) hue-rotate(180deg) contrast(100%) !important;
+}
+
+table[style*="/cvir/UI"],
+.cgBg
+{
+    background-image: none !important
+}
 
 ================================
 
@@ -2969,6 +3560,7 @@ CSS
 
 ================================
 
+opengeofiction.net
 openstreetmap.org
 
 INVERT
@@ -3041,6 +3633,15 @@ img[src^="data:image/png;"]
 
 ================================
 
+play.google.com/music
+
+INVERT
+.music-logo
+a[title="Google apps"]
+.song-row .rating-container
+
+================================
+
 plus.google.com
 
 INVERT
@@ -3105,6 +3706,13 @@ svg
 
 ================================
 
+pressgazette.co.uk
+
+INVERT
+.site-logo
+
+================================
+
 pro-run.pl
 
 INVERT
@@ -3122,15 +3730,17 @@ INVERT
 pyszne.pl
 
 INVERT
-.css-16gj3o1
-.css-13azwyo
 .gm-style
 
 CSS
-.cover, .logowrapper, .restaurant-logo__inner, .orderoverview__restaurant-image-container-inner {
+.cover img, .logowrapper, .restaurant-logo__inner, .orderoverview__restaurant-image-container-inner {
     background-color: rgba(255, 255, 255, 0.5) !important;
     background-blend-mode: color;
 }
+
+IGNORE INLINE STYLE
+svg > circle
+svg > text > tspan
 
 ================================
 
@@ -3139,6 +3749,14 @@ pythonanywhere.com
 INVERT
 #id_logo
 img[src^="/static/glyphicons/"]
+
+================================
+
+pytorch.org
+
+INVERT
+#site-logo
+.header-holder:not(.homepage-header) > div.container > div.header-container > .header-logo
 
 ================================
 
@@ -3151,10 +3769,14 @@ td.cell, td.label {
 
 ================================
 
-reddit.com
+railwaygazette.com
 
 INVERT
-header a[href="/"] svg:nth-child(2)
+.mastheadLogo
+
+================================
+
+reddit.com
 
 CSS
 [style^="--pseudo-before-background"] {
@@ -3175,7 +3797,19 @@ p, li {
 
 ================================
 
+referentiemateriaalvo.noordhoff.nl
+
+CSS
+body {
+    background-image: none !important;
+}
+
+================================
+
 regex101.com
+
+INVERT
+canvas
 
 CSS
 div > div:first-child + canvas:last-child {
@@ -3184,6 +3818,13 @@ div > div:first-child + canvas:last-child {
 .light .OJcb7 {
     background-color: ${rgb(64, 218, 212)} !important;
 }
+
+================================
+
+render.githubusercontent.com/view/ipynb
+
+INVERT
+img.math
 
 ================================
 
@@ -3524,6 +4165,14 @@ div.sd-player-slide
 
 ================================
 
+speed.cloudflare.com
+
+INVERT
+img[src*="speedrabbit-animate.gif"]
+img[src*="speedrabbit-static.png"]
+
+================================
+
 sport.pl
 
 INVERT
@@ -3533,6 +4182,13 @@ CSS
 .top_section_bg, .bottom_section_bg {
     background: ${#e5e5e5} !important;
 }
+
+================================
+
+store.ubi.com
+
+INVERT
+div.primary-logo
 
 ================================
 
@@ -3692,6 +4348,15 @@ ol.breadcrumbs li:first-child:before
 
 ================================
 
+support.mozilla.org
+
+INVERT
+.card--topic .card--icon
+.card--icon-sm
+div.sumo-nav--logo
+
+================================
+
 tagesschau.de
 
 CSS
@@ -3772,6 +4437,29 @@ div.content table tr td h1.entry-title a{
 
 ================================
 
+telerik.com
+
+INVERT
+a.TK-Aside-Menu-Link
+a.TK-Aside-Menu-Button
+#ContentPlaceholder1_C377_Col00 > img
+
+CSS
+a.TK-TLRK-Logo svg path[fill="#7c878e"] {
+    --darkreader-inline-fill: ${black} !important;
+}
+a.TK-TLRK-Logo svg path[fill="#4b4e52"] {
+    --darkreader-inline-fill: ${black} !important;
+}
+a.TK-PRGS-Logo-Footer svg path[fill="#4b4e52"] {
+    --darkreader-inline-fill: ${black} !important;
+}
+#ContentPlaceholder1_C418_Col00 > footer {
+    background-image: none !important;
+}
+
+================================
+
 tenor.com
 
 INVERT
@@ -3799,6 +4487,20 @@ INVERT
 
 ================================
 
+thejakartapost.com
+
+INVERT
+.logo-jakartapost
+
+================================
+
+theleagueofmoveabletype.com
+
+INVERT
+.eqCDBf
+
+================================
+
 themoviedb.org
 
 CSS
@@ -3815,7 +4517,27 @@ INVERT
 
 ================================
 
-theregister.co.uk
+theoatmeal.com
+
+INVERT
+img.d-inline-block.align-bottom
+
+================================
+
+theonion.com
+
+INVERT
+div.sc-2d8w30-0 bGlSMu
+div.sc-2d8w30-1.bRnfTk
+
+IGNORE INLINE STYLE
+div.sc-2d8w30-0.bGlSMu svg g path
+div.sc-2d8w30-1.bRnfTk svg g path
+
+================================
+
+theregister.*
+theregister.*.*
 
 INVERT
 .row_label.title_rhs_line
@@ -3825,6 +4547,10 @@ article {
   background-color: ${white} !important;
 }
 
+body {
+  color: ${black} !important;
+}
+
 ================================
 
 theverge.com
@@ -3832,6 +4558,15 @@ theverge.com
 INVERT
 .c-global-header__logo-large
 .c-masthead__logo
+.c-tab-bar__logo
+.c-footer__logo-link
+
+================================
+
+thewindowsclub.com
+
+INVERT
+h1.site-logo
 
 ================================
 
@@ -3851,6 +4586,15 @@ CSS
 mark a {
   color: ${#346eb8} !important;
 }
+
+================================
+
+tns-e.ru
+
+INVERT
+img[title*="ТНС энерго"]
+img[src="/img/refresh.png"]
+img[src="/img/logout-black.png"]
 
 ================================
 
@@ -4159,6 +4903,26 @@ a.showMoreItems {
 #userbar li.search.selected a {
     background-position: -24px -102px !important
 }
+.ctaButton.play::after {
+    background-color: #FFF !important;
+}
+
+================================
+
+type-together.com
+
+INVERT
+.carousel-inner
+
+================================
+
+ubuntu.com
+
+INVERT
+.global-nav__header-logo-anchor
+
+IGNORE INLINE STYLE
+g#ubuntu-logo > path
 
 ================================
 
@@ -4202,6 +4966,16 @@ CSS
 
 ================================
 
+usbmobilemonitor.com
+
+CSS
+.wsb-canvas-scrollable {
+    background-color: ${white} !important;
+    background-image: none !important;
+}
+
+================================
+
 vandale.nl
 
 INVERT
@@ -4218,6 +4992,48 @@ CSS
 #page_wrapper {
   background-color: ${#fff4e0} !important;
 }
+
+================================
+
+vechevoikolokol.ru
+
+INVERT
+.map
+.main-page-about .img-responsive
+.header-menu__mobile .img-responsive
+
+CSS
+.main-page-about, .main-suggestions, .i-about, .issues-page__content{
+    background: none !important;
+}
+
+================================
+
+vice.com
+
+INVERT
+img[src*="article-logo"]
+div.nav-bar__hamburger-button__hamburger
+a.page-footer__logo-vice-link
+
+CSS
+.titlebar__logo__icon svg path {
+    --darkreader-inline-fill: ${black} !important;
+}
+.logo-vice__foreground {
+    --darkreader-inline-fill: ${black} !important;
+}
+.sections-collection__tail .sections-collection__sections-card .sections-card__content {
+    background-color: ${white} !important;
+}
+
+================================
+
+vimeo.com
+
+IGNORE INLINE STYLE
+.bdAcUM svg path
+.topnav_desktop_logo path
 
 ================================
 
@@ -4253,6 +5069,15 @@ img[alt~="Equation"]
 
 ================================
 
+waze.com
+
+INVERT
+.wm-map__leaflet
+.leaflet-bottom
+.leaflet-popup-content-wrapper
+
+================================
+
 web.archive.org
 
 INVERT
@@ -4281,6 +5106,11 @@ CSS
 
 web.telegram.org
 
+INVERT
+.composer_emoji_tooltip_category
+.nano-slider
+.divider
+
 CSS
 .progress-bar {
     background-color: rgba(255,255,255,.9) !important;
@@ -4298,10 +5128,10 @@ CSS
 ._3Ye_R {
     color: gray !important
 }
-[data-asset-intro-image] {
+[data-asset-intro-image], [data-asset-intro-image-light] {
     background-image: url(/img/intro-connection_c98cc75f2aa905314d74375a975d2cf2.jpg) !important;
 }
-._11ozL {
+html[dir] .landing-main > :first-child > :nth-child(2) > :first-child {
     border: 5px solid white !important;
 }
 span[data-icon="tail-in"] {
@@ -4319,6 +5149,15 @@ span[data-icon="tail-out"] {
 
 IGNORE INLINE STYLE
 path[fill="currentColor"]
+
+================================
+
+webaim.org
+
+CSS
+body {
+    background-image: none !important
+}
 
 ================================
 
@@ -4344,8 +5183,10 @@ CSS
 wego.here.com
 
 INVERT
+#map
 .route_card_left
 .route_tooltip_icon
+.btn_directions
 
 ================================
 
@@ -4427,10 +5268,41 @@ img.confluence-embedded-image[data-linked-resource-content-type="image/jpeg"] {
 
 ================================
 
+wiki.mozilla.org
+
+CSS
+body {
+    background-image: none !important;
+}
+
+================================
+
 wikibooks.org
 
 INVERT
 .mwe-math-element
+
+================================
+
+wikidata.org
+
+INVERT
+.wd-mp-headerimage
+
+================================
+
+wikimapia.org
+
+INVERT
+#map
+
+================================
+
+wikimedia.org
+
+INVERT
+img.graphite-graph
+img[src="images/black.png"]
 
 ================================
 
@@ -4444,6 +5316,8 @@ INVERT
 .svg-Wikimedia-logo_black
 .header .branding-box > a > span > img
 .main-footer-menuToggle
+div.post-content.footer-content > h2 > img
+img[src*="Loudspeaker.svg"]
 img[src$=".svg.png"]
 
 CSS
@@ -4479,9 +5353,20 @@ a[href$=".svg"]:hover > img {
         background-color: ${#eaecf0} !important;
     }
 }
+.main-top {
+    background: none !important;
+}
 
 IGNORE INLINE STYLE
 .legend-color
+.infobox > tbody > tr > td[style*="background-color"]
+
+================================
+
+wikiversity.org
+
+INVERT
+.mwe-math-element
 
 ================================
 
@@ -4501,6 +5386,29 @@ wiktionary.org
 
 CSS
 div.NavFrame div.NavHead {
+    background-image: none !important;
+}
+
+================================
+
+wired.com
+
+INVERT
+i.logo.icon.icon--logo--150
+picture.standard-navigation__logo-image.responsive-image
+
+================================
+
+worldtimebuddy.com
+
+INVERT
+div.country
+div.city
+div.data
+
+CSS
+body {
+    background: none !important;
     background-image: none !important;
 }
 
@@ -4579,6 +5487,15 @@ INVERT
 #dictionary-modules img[src*="png"]
 a.gb_b > div
 a[href*="about/products"]
+.JOmIqc
+.hLcKi
+#EcMbV
+.vk-sf-b
+.vk-t-btn
+.ChZgtd div::before
+.ChZgtd div::after
+.yPHXsc div
+.mn-dwn-arw
 
 CSS
 .RNNXgb {
@@ -4590,6 +5507,26 @@ CSS
 
 IGNORE INLINE STYLE
 .kdPwrb
+.rnt3Ze
+.NYcQFd
+
+================================
+
+www.realtek.com
+
+CSS
+#t3-header {
+    background: ${white} !important;
+}
+#t3-header > div > div.col-xs-3.visible-xs-block > button.search-toggle {
+    background-color: inherit !important;
+}
+#t3-header > div > div.col-xs-3.visible-xs-block > button.globe-toggle {
+    background-color: inherit !important;
+}
+body > div.t3-wrapper > div > div.section-wrap.bg-wrap1 > div > div > div.custom > div > a {
+    background-color: ${white} !important;
+}
 
 ================================
 
@@ -4650,7 +5587,6 @@ CSS
 .tableContainer thead th {
     background-image: none !important;
     background-color: ${white} !important;
-
 }
 
 .tableContainer thead {
@@ -4692,6 +5628,28 @@ xfree86.org
 
 INVERT
 img[src*=".png"]
+
+================================
+
+yadi.sk
+
+INVERT
+span.logo.burger-sidebar__logo
+span.logo.burger-sidebar__sidebar-logo
+
+================================
+
+yandex.*/maps
+
+INVERT
+.content-panel-header__logo
+.whats-here-preview__control-search-icon
+.close-button._color_black._circle
+.business-social-links-view__icon
+.social-share-view_discovery-small
+.social-share-view_discovery-large
+.orgpage-social-links-view__icon
+.map-container > ymaps > ymaps > ymaps > ymaps
 
 ================================
 
